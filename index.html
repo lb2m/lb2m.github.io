@@ -3,194 +3,191 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Laboratório de Biotecnologia e Bioinformática de Microrganismos</title>
+  <title>LB2M – UNESP Bauru</title>
+
   <style>
     :root {
       --primary: #1f4d3a;
       --secondary: #3a7f5f;
-      --bg: #f5f7f6;
+      --bg: #f4f6f5;
       --text: #1a1a1a;
+      --card: #ffffff;
     }
+
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       background: var(--bg);
       color: var(--text);
-      line-height: 1.6;
     }
 
+    /* ===== HEADER ===== */
     header {
+      height: 20vh;
+      min-height: 160px;
       background: linear-gradient(135deg, var(--primary), var(--secondary));
       color: white;
-      padding: 4rem 2rem;
-      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1.5rem 2rem;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2.8rem;
-    }
-
-    header p {
-      max-width: 800px;
-      margin: 1rem auto 0;
-      font-size: 1.2rem;
+      font-size: 2rem;
     }
 
     nav {
-      background: white;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      margin-top: 1rem;
     }
 
     nav ul {
       list-style: none;
+      padding: 0;
+      margin: 0;
       display: flex;
       gap: 1.5rem;
-      justify-content: center;
-      padding: 1rem;
-      margin: 0;
+      flex-wrap: wrap;
     }
 
     nav a {
-      text-decoration: none;
-      color: var(--primary);
-      font-weight: 600;
-    }
-
-    .lang-toggle {
-      position: absolute;
-      right: 1rem;
-      top: 1rem;
-    }
-
-    .lang-toggle button {
-      background: none;
-      border: 1px solid white;
       color: white;
-      padding: 0.3rem 0.7rem;
-      margin-left: 0.5rem;
-      cursor: pointer;
-      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 600;
+      opacity: 0.9;
     }
 
-    section {
-      max-width: 1100px;
-      margin: 3rem auto;
-      padding: 0 2rem;
-    }
+    nav a:hover { opacity: 1; }
 
-    section h2 {
-      color: var(--primary);
-      margin-bottom: 1rem;
-      font-size: 2rem;
-    }
-
-    .cards {
+    /* ===== MAIN LAYOUT ===== */
+    main {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
+      grid-template-columns: 1fr 2fr;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: -3rem auto 0;
+      padding: 0 2rem 4rem;
+    }
+
+    /* ===== LEFT COLUMN ===== */
+    .sidebar {
+      background: var(--card);
+      border-radius: 14px;
+      padding: 2rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      align-self: start;
+    }
+
+    .sidebar img {
+      max-width: 260px;
+      display: block;
+      margin: 0 auto 1.5rem;
+    }
+
+    .sidebar h3 {
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: var(--primary);
+    }
+
+    .sidebar p {
+      margin: 0.2rem 0;
+      font-size: 0.95rem;
+    }
+
+    /* ===== RIGHT COLUMN ===== */
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
     }
 
     .card {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      background: var(--card);
+      border-radius: 14px;
+      padding: 2rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
     }
 
+    .card h2 {
+      margin-top: 0;
+      color: var(--primary);
+    }
+
+    /* ===== FOOTER ===== */
     footer {
-      background: var(--primary);
-      color: white;
       text-align: center;
       padding: 2rem;
-      margin-top: 4rem;
+      font-size: 0.9rem;
+      color: #555;
     }
 
-    footer p {
-      margin: 0.3rem 0;
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 900px) {
+      main {
+        grid-template-columns: 1fr;
+        margin-top: 2rem;
+      }
     }
   </style>
 </head>
+
 <body>
 
-  <header>
-    <div class="lang-toggle">
-      <button onclick="setLang('pt')">PT</button>
-      <button onclick="setLang('en')">EN</button>
-    </div>
-    <img src="LB2M-logo.png" alt="Logo LB2M" style="max-width:216px; margin-bottom:1rem;" />
-    <h1 data-pt="LB2M" data-en="LB2M">LB2M</h1>
-    <p data-pt="Laboratório de Biotecnologia e Bioinformática de Microrganismos – UNESP, Câmpus Bauru"
-       data-en="Laboratory of Biotechnology and Bioinformatics of Microorganisms – UNESP">
-      Laboratório de Biotecnologia e Bioinformática de Microrganismos – UNESP, Câmpus Bauru
-    </p>
-  </header>
-
+<header>
+  <h1>Laboratório de Biotecnologia e Bioinformática de Microrganismos – UNESP, Câmpus Bauru</h1>
   <nav>
     <ul>
-      <li><a href="#sobre" data-pt="Sobre" data-en="About">Sobre</a></li>
-      <li><a href="#pesquisa" data-pt="Pesquisa" data-en="Research">Pesquisa</a></li>
-      <li><a href="#equipe" data-pt="Equipe" data-en="Team">Equipe</a></li>
-      <li><a href="#publicacoes" data-pt="Publicações" data-en="Publications">Publicações</a></li>
-      <li><a href="#contato" data-pt="Contato" data-en="Contact">Contato</a></li>
+      <li><a href="#home">Início</a></li>
+      <li><a href="#research">Pesquisa</a></li>
+      <li><a href="#team">Equipe</a></li>
+      <li><a href="#publications">Publicações</a></li>
+      <li><a href="#contact">Contato</a></li>
     </ul>
   </nav>
+</header>
 
-  <section id="sobre">
-    <h2 data-pt="Bem-vindo ao LB2M" data-en="Welcome to LB2M">Bem-vindo ao LB2M</h2>
-    <p data-pt="O Laboratório de Biotecnologia e Bioinformática de Microrganismos (LB2M) é composto por microbiologistas com sólida formação e profunda compreensão dos mecanismos moleculares envolvidos na evolução e adaptação de microrganismos. Esses conhecimentos são aplicados de forma integrada em projetos acadêmicos e de inovação voltados à bioprospecção e à biotecnologia microbiana." 
-       data-en="The Laboratory of Biotechnology and Bioinformatics of Microorganisms (LB2M) is composed of microbiologists with strong training and deep understanding of the molecular mechanisms underlying microbial evolution and adaptation. This expertise is integrated into academic and innovation-driven projects focused on microbial bioprospecting and biotechnology.">
-      O Laboratório de Biotecnologia e Bioinformática de Microrganismos (LB2M) é composto por microbiologistas com sólida formação e profunda compreensão dos mecanismos moleculares envolvidos na evolução e adaptação de microrganismos. Esses conhecimentos são aplicados de forma integrada em projetos acadêmicos e de inovação voltados à bioprospecção e à biotecnologia microbiana.
-    </p>
-  </section>
+<main id="home">
 
-  <section id="pesquisa">
-    <h2 data-pt="Linhas de Pesquisa" data-en="Research Lines">Linhas de Pesquisa</h2>
-    <div class="cards">
-      <div class="card" data-pt="Bioinformática microbiana e análise de comunidades" data-en="Microbial bioinformatics and community analysis">Bioinformática microbiana e análise de comunidades</div>
-      <div class="card" data-pt="Genômica de microrganismos cultivados e não cultivados" data-en="Genomics of cultured and uncultured microorganisms">Genômica de microrganismos cultivados e não cultivados</div>
-      <div class="card" data-pt="Biotecnologia microbiana" data-en="Microbial biotechnology">Biotecnologia microbiana</div>
+  <!-- LEFT COLUMN -->
+  <aside class="sidebar">
+    <img src="LB2M-logo.png" alt="Logo LB2M" />
+
+    <h3>Localização</h3>
+    <p>Universidade Estadual Paulista (UNESP)</p>
+    <p>Câmpus Bauru</p>
+
+    <h3>Contato</h3>
+    <p>Email institucional</p>
+    <p>Bauru – SP, Brasil</p>
+  </aside>
+
+  <!-- RIGHT COLUMN -->
+  <section class="content">
+
+    <div class="card">
+      <h2>Bem-vindo ao LB2M</h2>
+      <p>
+        O Laboratório de Biotecnologia e Bioinformática de Microrganismos (LB2M) é composto por microbiologistas com sólida formação e profunda compreensão dos mecanismos moleculares envolvidos na evolução e adaptação de microrganismos. Esses conhecimentos são aplicados de forma integrada em projetos acadêmicos e de inovação voltados à bioprospecção e à biotecnologia microbiana.
+      </p>
     </div>
+
+    <div class="card">
+      <h2>Coordenação</h2>
+      <p>
+        Filipe Matteoli é professor da Universidade Estadual Paulista (UNESP), atuando nas áreas de microbiologia, genômica e bioinformática. Desenvolve pesquisas voltadas à ecologia microbiana, evolução de microrganismos e aplicações biotecnológicas, com forte integração entre dados experimentais e análise computacional.
+      </p>
+    </div>
+
   </section>
+</main>
 
-  <section id="equipe">
-    <h2 data-pt="Equipe" data-en="Team">Equipe</h2>
-    <p data-pt="Professor responsável, estudantes de Iniciação Científica e Pós-Graduação." 
-       data-en="Principal investigator, undergraduate and graduate students.">
-      Professor responsável, estudantes de Iniciação Científica e Pós-Graduação.
-    </p>
-  </section>
-
-  <section id="publicacoes">
-    <h2 data-pt="Publicações" data-en="Publications">Publicações</h2>
-    <p data-pt="As publicações do grupo podem ser encontradas no Google Scholar." 
-       data-en="Group publications can be found on Google Scholar.">
-      As publicações do grupo podem ser encontradas no Google Scholar.
-    </p>
-    <p><a href="https://scholar.google.com/citations?user=mFP1lU4AAAAJ" target="_blank">Google Scholar</a></p>
-  </section>
-
-  <section id="contato">
-    <h2 data-pt="Contato" data-en="Contact">Contato</h2>
-    <p data-pt="Universidade Estadual Paulista (UNESP)" data-en="São Paulo State University (UNESP)">Universidade Estadual Paulista (UNESP)</p>
-  </section>
-
-  <footer>
-    <p>LB2M © 2025</p>
-    <p>UNESP</p>
-  </footer>
-
-  <script>
-    function setLang(lang) {
-      document.querySelectorAll('[data-pt]').forEach(el => {
-        el.textContent = el.dataset[lang];
-      });
-    }
-  </script>
+<footer>
+  <p>LB2M © 2025 · UNESP</p>
+</footer>
 
 </body>
 </html>
