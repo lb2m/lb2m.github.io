@@ -25,23 +25,25 @@
 
     /* ===== HEADER ===== */
     header {
-      height: 20vh;
-      min-height: 160px;
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      color: white;
+      height: auto;
+      background: transparent;
+      color: black;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 1.5rem 2rem;
+      align-items: center;
+      padding: 1.5rem 2rem 1rem 2rem;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2rem;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #000;
+      white-space: nowrap;
     }
 
     nav {
-      margin-top: 1rem;
+      margin-left: 3rem;
+      flex: 1;
     }
 
     nav ul {
@@ -49,15 +51,15 @@
       padding: 0;
       margin: 0;
       display: flex;
-      gap: 1.5rem;
-      flex-wrap: wrap;
+      gap: 1.8rem;
+      align-items: center;
     }
 
     nav a {
-      color: white;
+      color: #000;
       text-decoration: none;
-      font-weight: 600;
-      opacity: 0.9;
+      font-size: 1.3rem;
+      font-weight: 400;
     }
 
     nav a:hover { opacity: 1; }
@@ -66,18 +68,18 @@
     main {
       display: grid;
       grid-template-columns: 1fr 2fr;
-      gap: 2rem;
+      gap: 2.5rem;
       max-width: 1200px;
-      margin: -3rem auto 0;
+      margin: 2.5rem auto 0;
       padding: 0 2rem 4rem;
     }
 
     /* ===== LEFT COLUMN ===== */
     .sidebar {
-      background: var(--card);
-      border-radius: 14px;
-      padding: 2rem;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      background: transparent;
+      border-radius: 0;
+      padding: 0;
+      box-shadow: none;
       align-self: start;
     }
 
@@ -106,10 +108,10 @@
     }
 
     .card {
-      background: var(--card);
-      border-radius: 14px;
-      padding: 2rem;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      background: transparent;
+      border-radius: 0;
+      padding: 0;
+      box-shadow: none;
     }
 
     .card h2 {
@@ -138,14 +140,15 @@
 <body>
 
 <header>
-  <h1>Laboratório de Biotecnologia e Bioinformática de Microrganismos – UNESP, Câmpus Bauru</h1>
+  <h1>Laboratório de Biotecnologia e Bioinformática de Microrganismos</h1>
   <nav>
     <ul>
-      <li><a href="#home">Início</a></li>
-      <li><a href="#research">Pesquisa</a></li>
-      <li><a href="#team">Equipe</a></li>
+      <li style="margin-left:2rem;"><a href="#members">Membros</a></li>
       <li><a href="#publications">Publicações</a></li>
-      <li><a href="#contact">Contato</a></li>
+      <li><a href="#gallery">Galeria</a></li>
+      <li><a href="#activities">Atividades</a></li>
+      <li><a href="#teaching">Ensino</a></li>
+      <li><a href="#inclusion">Inclusão</a></li>
     </ul>
   </nav>
 </header>
