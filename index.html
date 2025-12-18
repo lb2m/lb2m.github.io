@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LB2M – Laboratório de Biotecnologia e Bioinformática de Microrganismos</title>
+  <style>
+    :root {
+      --primary: #1f4d3a;
+      --secondary: #3a7f5f;
+      --bg: #f5f7f6;
+      --text: #1a1a1a;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+    }
+
+    header p {
+      max-width: 800px;
+      margin: 1rem auto 0;
+      font-size: 1.2rem;
+    }
+
+    nav {
+      background: white;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      padding: 1rem;
+      margin: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    .lang-toggle {
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+    }
+
+    .lang-toggle button {
+      background: none;
+      border: 1px solid white;
+      color: white;
+      padding: 0.3rem 0.7rem;
+      margin-left: 0.5rem;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 3rem auto;
+      padding: 0 2rem;
+    }
+
+    section h2 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    footer {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 4rem;
+    }
+
+    footer p {
+      margin: 0.3rem 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="lang-toggle">
+      <button onclick="setLang('pt')">PT</button>
+      <button onclick="setLang('en')">EN</button>
+    </div>
+    <img src="LB2M-logo.png" alt="Logo LB2M" style="max-width:180px; margin-bottom:1rem;" />
+    <h1 data-pt="LB2M" data-en="LB2M">LB2M</h1>
+    <p data-pt="Laboratório de Biotecnologia e Bioinformática de Microrganismos – UNESP"
+       data-en="Laboratory of Biotechnology and Bioinformatics of Microorganisms – UNESP">
+      Laboratório de Biotecnologia e Bioinformática de Microrganismos – UNESP
+    </p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#sobre" data-pt="Sobre" data-en="About">Sobre</a></li>
+      <li><a href="#pesquisa" data-pt="Pesquisa" data-en="Research">Pesquisa</a></li>
+      <li><a href="#equipe" data-pt="Equipe" data-en="Team">Equipe</a></li>
+      <li><a href="#publicacoes" data-pt="Publicações" data-en="Publications">Publicações</a></li>
+      <li><a href="#contato" data-pt="Contato" data-en="Contact">Contato</a></li>
+    </ul>
+  </nav>
+
+  <section id="sobre">
+    <h2 data-pt="Sobre o Laboratório" data-en="About the Lab">Sobre o Laboratório</h2>
+    <p data-pt="O LB2M atua na interface entre microbiologia, bioinformática e biotecnologia, com foco em genômica, ecologia microbiana e aplicações biotecnológicas." 
+       data-en="LB2M works at the interface of microbiology, bioinformatics, and biotechnology, focusing on genomics, microbial ecology, and biotechnological applications.">
+      O LB2M atua na interface entre microbiologia, bioinformática e biotecnologia, com foco em genômica, ecologia microbiana e aplicações biotecnológicas.
+    </p>
+  </section>
+
+  <section id="pesquisa">
+    <h2 data-pt="Linhas de Pesquisa" data-en="Research Lines">Linhas de Pesquisa</h2>
+    <div class="cards">
+      <div class="card" data-pt="Bioinformática microbiana e análise de comunidades" data-en="Microbial bioinformatics and community analysis">Bioinformática microbiana e análise de comunidades</div>
+      <div class="card" data-pt="Genômica de microrganismos cultivados e não cultivados" data-en="Genomics of cultured and uncultured microorganisms">Genômica de microrganismos cultivados e não cultivados</div>
+      <div class="card" data-pt="Biotecnologia microbiana" data-en="Microbial biotechnology">Biotecnologia microbiana</div>
+    </div>
+  </section>
+
+  <section id="equipe">
+    <h2 data-pt="Equipe" data-en="Team">Equipe</h2>
+    <p data-pt="Professor responsável, estudantes de Iniciação Científica e Pós-Graduação." 
+       data-en="Principal investigator, undergraduate and graduate students.">
+      Professor responsável, estudantes de Iniciação Científica e Pós-Graduação.
+    </p>
+  </section>
+
+  <section id="publicacoes">
+    <h2 data-pt="Publicações" data-en="Publications">Publicações</h2>
+    <p data-pt="As publicações do grupo podem ser encontradas no Google Scholar." 
+       data-en="Group publications can be found on Google Scholar.">
+      As publicações do grupo podem ser encontradas no Google Scholar.
+    </p>
+    <p><a href="https://scholar.google.com/citations?user=mFP1lU4AAAAJ" target="_blank">Google Scholar</a></p>
+  </section>
+
+  <section id="contato">
+    <h2 data-pt="Contato" data-en="Contact">Contato</h2>
+    <p data-pt="Universidade Estadual Paulista (UNESP)" data-en="São Paulo State University (UNESP)">Universidade Estadual Paulista (UNESP)</p>
+  </section>
+
+  <footer>
+    <p>LB2M © 2025</p>
+    <p>UNESP</p>
+  </footer>
+
+  <script>
+    function setLang(lang) {
+      document.querySelectorAll('[data-pt]').forEach(el => {
+        el.textContent = el.dataset[lang];
+      });
+    }
+  </script>
+
+</body>
+</html>
