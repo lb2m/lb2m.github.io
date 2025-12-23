@@ -38,8 +38,6 @@
     nav {
       margin-left: 3rem;
       flex: 1;
-      display: flex;
-      align-items: center;
     }
 
     nav ul {
@@ -49,7 +47,7 @@
       display: flex;
       gap: 1.4rem;
       align-items: center;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
     }
 
     nav a {
@@ -57,19 +55,6 @@
       text-decoration: none;
       font-size: 1.15rem;
       font-weight: 400;
-    }
-
-    .lang-toggle {
-      margin-left: 1rem;
-      cursor: pointer;
-      font-size: 0.85rem;
-      font-weight: 600;
-      opacity: 0.7;
-      white-space: nowrap;
-    }
-
-    .lang-toggle:hover {
-      opacity: 1;
     }
 
     /* ===== MAIN ===== */
@@ -138,6 +123,22 @@
       color: #555;
     }
 
+    .lang-footer {
+      margin-top: 0.5rem;
+      font-size: 0.85rem;
+    }
+
+    .lang-footer span {
+      cursor: pointer;
+      margin: 0 0.4rem;
+      font-weight: 600;
+      opacity: 0.7;
+    }
+
+    .lang-footer span:hover {
+      opacity: 1;
+    }
+
     /* ===== RESPONSIVE ===== */
     @media (max-width: 900px) {
       main {
@@ -180,10 +181,6 @@
         <a href="#inclusion" data-lang="en">Inclusion</a>
       </li>
     </ul>
-
-    <!-- Language toggle -->
-    <span class="lang-toggle" onclick="setLang('pt')">PT</span>
-    <span class="lang-toggle" onclick="setLang('en')">EN</span>
   </nav>
 </header>
 
@@ -215,7 +212,6 @@
   <!-- RIGHT COLUMN -->
   <section class="content">
 
-    <!-- BEM-VINDO / WELCOME -->
     <div data-lang="pt">
       <h2>Bem-vindo ao LB2M</h2>
       <p>
@@ -236,7 +232,6 @@
       </p>
     </div>
 
-    <!-- COORDENAÇÃO / COORDINATION -->
     <div data-lang="pt">
       <h2>Coordenação</h2>
       <p><strong>Filipe P. Matteoli</strong></p>
@@ -264,6 +259,9 @@
 
 <footer>
   <p>LB2M © 2025 · UNESP</p>
+  <div class="lang-footer">
+    <span onclick="setLang('pt')">PT</span> | <span onclick="setLang('en')">EN</span>
+  </div>
 </footer>
 
 <script>
