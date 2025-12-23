@@ -8,7 +8,6 @@
   <style>
     :root {
       --primary: #1f4d3a;
-      --secondary: #3a7f5f;
       --bg: #f4f6f5;
       --text: #1a1a1a;
     }
@@ -24,7 +23,6 @@
 
     /* ===== HEADER ===== */
     header {
-      background: transparent;
       display: flex;
       align-items: center;
       padding: 1.5rem 2rem 1rem 2rem;
@@ -34,7 +32,6 @@
       margin: 0;
       font-size: 1.15rem;
       font-weight: 700;
-      color: #000;
       white-space: nowrap;
     }
 
@@ -60,7 +57,7 @@
       font-weight: 400;
     }
 
-    /* ===== MAIN LAYOUT ===== */
+    /* ===== MAIN ===== */
     main {
       display: grid;
       grid-template-columns: 1fr 2fr;
@@ -70,11 +67,7 @@
       padding: 0 2rem 4rem;
     }
 
-    /* ===== LEFT COLUMN ===== */
-    .sidebar {
-      padding: 0;
-    }
-
+    /* ===== SIDEBAR ===== */
     .sidebar img.logo {
       max-width: 260px;
       display: block;
@@ -105,7 +98,7 @@
       height: 1.15rem;
     }
 
-    /* ===== RIGHT COLUMN ===== */
+    /* ===== CONTENT ===== */
     .content {
       display: flex;
       flex-direction: column;
@@ -129,7 +122,6 @@
     @media (max-width: 900px) {
       main {
         grid-template-columns: 1fr;
-        margin-top: 2rem;
       }
     }
   </style>
@@ -151,7 +143,7 @@
   </nav>
 </header>
 
-<main id="home">
+<main>
 
   <!-- LEFT COLUMN -->
   <aside class="sidebar">
@@ -165,13 +157,14 @@
         <img src="images/gps_icon.png" alt="Localização" />
         <span>
           Universidade Estadual Paulista (UNESP)<br />
-          Câmpus Bauru - SP, Brasil.
+          Câmpus Bauru
         </span>
       </a>
     </p>
 
     <h3>Contato</h3>
-    <p>filipe.matteoli@unesp.br</p>
+    <p>Email institucional</p>
+    <p>Bauru – SP, Brasil</p>
   </aside>
 
   <!-- RIGHT COLUMN -->
@@ -182,12 +175,45 @@
       <p>
         O Laboratório de Biotecnologia e Bioinformática de Microrganismos (LB2M) é composto por microbiologistas com sólida formação e profunda compreensão dos mecanismos moleculares envolvidos na evolução e adaptação de microrganismos. Esses conhecimentos são aplicados de forma integrada em projetos acadêmicos e de inovação voltados à bioprospecção e à biotecnologia microbiana.
       </p>
+      <p>
+        Os tópicos abordados em nossas pesquisas envolvem a sistemática, evolução e ecologia de bactérias de biomas brasileiros. Também estudamos como bactérias, fungos e protistas interagem no solo, e como essas interações alteram as propriedades físico-químicas do solo e influenciam as plantas. Possuímos colaboradores de outras instituições do Brasil, da América do Sul e de diferentes regiões do mundo.
+      </p>
+
+      <!-- ENGLISH -->
+      <p style="margin-top:1.5rem;font-size:0.95rem;">
+        <em>
+        The Laboratory of Biotechnology and Bioinformatics of Microorganisms (LB2M) comprises microbiologists with strong academic training and a deep understanding of the molecular mechanisms underlying microbial evolution and adaptation. This expertise is integrated into academic and innovation-driven projects focused on microbial bioprospecting and biotechnology.
+        </em>
+      </p>
+      <p style="font-size:0.95rem;">
+        <em>
+        Our research topics include the systematics, evolution, and ecology of bacteria from Brazilian biomes. We also investigate how bacteria, fungi, and protists interact in soils, and how these interactions modify soil physicochemical properties and influence plant performance. Our research is conducted in collaboration with institutions from Brazil, South America, and other regions worldwide.
+        </em>
+      </p>
     </div>
 
     <div>
       <h2>Coordenação</h2>
       <p>
-        Filipe Matteoli é professor da Universidade Estadual Paulista (UNESP), atuando nas áreas de microbiologia, genômica e bioinformática. Desenvolve pesquisas voltadas à ecologia microbiana, evolução de microrganismos e aplicações biotecnológicas, com forte integração entre dados experimentais e análise computacional.
+        <strong>Filipe P. Matteoli</strong>
+      </p>
+      <p>
+        Comparativamente, descobrimos mais sobre o Universo do que sobre a biodiversidade microbiana. Isso não deveria ser surpresa, uma vez que a microbiologia foi fundada por volta de 1880, possuindo pouco mais de 150 anos. Ainda desconhecemos a absoluta maioria da biodiversidade de fungos, bactérias, arqueias e protistas, o que se reflete em bancos de dados imprecisos e frequentes incertezas taxonômicas.
+      </p>
+      <p>
+        Essa biodiversidade distribui-se de maneira não uniforme nos biomas da Terra, onde, em conjunto, os microrganismos atuam para manter as engrenagens do planeta em funcionamento. Nossa missão é compreender quem eles são, como evoluem e como modificam o ambiente que os cerca, particularmente nos solos. Buscamos aprender a manipular esses microbiomas para restaurar essas engrenagens e retornar nossos habitats ao seu estado original.
+      </p>
+
+      <!-- ENGLISH -->
+      <p style="margin-top:1.5rem;font-size:0.95rem;">
+        <em>
+        Comparatively, we know more about the Universe than about microbial biodiversity. This should not be surprising, as microbiology was founded around 1880 and is little more than 150 years old. We still lack knowledge of the vast majority of fungal, bacterial, archaeal, and protistan diversity, which is reflected in imprecise databases and persistent taxonomic uncertainty.
+        </em>
+      </p>
+      <p style="font-size:0.95rem;">
+        <em>
+        This biodiversity is unevenly distributed across Earth’s biomes, where microorganisms collectively act to keep the planet’s machinery running. Our mission is to understand who they are, how they evolve, and how they modify their surrounding environment, particularly in soils. Ultimately, we aim to learn how to manipulate these microbiomes to restore these mechanisms and return our habitats to their original state.
+        </em>
       </p>
     </div>
 
