@@ -60,9 +60,15 @@
     }
 
     .lang-toggle {
-      margin-left: 1.2rem;
+      margin-left: 1.5rem;
       cursor: pointer;
-      font-size: 1.2rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      opacity: 0.7;
+    }
+
+    .lang-toggle:hover {
+      opacity: 1;
     }
 
     /* ===== MAIN ===== */
@@ -148,17 +154,35 @@
 
   <nav>
     <ul>
-      <li style="margin-left:2rem;"><a href="#members" data-lang="pt">Membros</a><a href="#members" data-lang="en">Members</a></li>
-      <li><a href="#publications" data-lang="pt">Publicações</a><a href="#publications" data-lang="en">Publications</a></li>
-      <li><a href="#gallery" data-lang="pt">Galeria</a><a href="#gallery" data-lang="en">Gallery</a></li>
-      <li><a href="#activities" data-lang="pt">Atividades</a><a href="#activities" data-lang="en">Activities</a></li>
-      <li><a href="#teaching" data-lang="pt">Ensino</a><a href="#teaching" data-lang="en">Teaching</a></li>
-      <li><a href="#inclusion" data-lang="pt">Inclusão</a><a href="#inclusion" data-lang="en">Inclusion</a></li>
+      <li style="margin-left:2rem;">
+        <a href="#members" data-lang="pt">Membros</a>
+        <a href="#members" data-lang="en">Members</a>
+      </li>
+      <li>
+        <a href="#publications" data-lang="pt">Publicações</a>
+        <a href="#publications" data-lang="en">Publications</a>
+      </li>
+      <li>
+        <a href="#gallery" data-lang="pt">Galeria</a>
+        <a href="#gallery" data-lang="en">Gallery</a>
+      </li>
+      <li>
+        <a href="#activities" data-lang="pt">Atividades</a>
+        <a href="#activities" data-lang="en">Activities</a>
+      </li>
+      <li>
+        <a href="#teaching" data-lang="pt">Ensino</a>
+        <a href="#teaching" data-lang="en">Teaching</a>
+      </li>
+      <li>
+        <a href="#inclusion" data-lang="pt">Inclusão</a>
+        <a href="#inclusion" data-lang="en">Inclusion</a>
+      </li>
     </ul>
 
     <!-- Language toggle -->
-    <span class="lang-toggle" onclick="setLang('en')" title="English">🇬🇧</span>
-    <span class="lang-toggle" onclick="setLang('pt')" title="Português">🇧🇷</span>
+    <span class="lang-toggle" onclick="setLang('pt')">PT</span>
+    <span class="lang-toggle" onclick="setLang('en')">EN</span>
   </nav>
 </header>
 
@@ -184,13 +208,13 @@
     <h3 data-lang="pt">Contato</h3>
     <h3 data-lang="en">Contact</h3>
 
-    <p>Email institucional</p>
-    <p>Bauru – SP, Brazil</p>
+    <p>filipe.matteoli@unesp.br</p>
   </aside>
 
   <!-- RIGHT COLUMN -->
   <section class="content">
 
+    <!-- BEM-VINDO / WELCOME -->
     <div data-lang="pt">
       <h2>Bem-vindo ao LB2M</h2>
       <p>
@@ -211,11 +235,15 @@
       </p>
     </div>
 
+    <!-- COORDENAÇÃO / COORDINATION -->
     <div data-lang="pt">
       <h2>Coordenação</h2>
       <p><strong>Filipe P. Matteoli</strong></p>
       <p>
-        Comparativamente, descobrimos mais sobre o Universo do que sobre a biodiversidade microbiana...
+        Comparativamente, descobrimos mais sobre o Universo do que sobre a biodiversidade microbiana. Isso não deveria ser surpresa, uma vez que a microbiologia foi fundada por volta de 1880, possuindo pouco mais de 150 anos. Ainda desconhecemos a absoluta maioria da biodiversidade de fungos, bactérias, arqueias e protistas, o que se reflete em bancos de dados imprecisos e frequentes incertezas taxonômicas.
+      </p>
+      <p>
+        Essa biodiversidade distribui-se de maneira não uniforme nos biomas da Terra, onde, em conjunto, os microrganismos atuam para manter as engrenagens do planeta em funcionamento. Nossa missão é compreender quem eles são, como evoluem e como modificam o ambiente que os cerca, particularmente nos solos. Buscamos aprender a manipular esses microbiomas para restaurar essas engrenagens e retornar nossos habitats ao seu estado original.
       </p>
     </div>
 
@@ -223,7 +251,10 @@
       <h2>Coordination</h2>
       <p><strong>Filipe P. Matteoli</strong></p>
       <p>
-        Comparatively, we know more about the Universe than about microbial biodiversity...
+        Comparatively, we know more about the Universe than about microbial biodiversity. This should not be surprising, as microbiology was founded around 1880 and is little more than 150 years old. We still lack knowledge of the vast majority of fungal, bacterial, archaeal, and protistan diversity, which is reflected in imprecise databases and persistent taxonomic uncertainty.
+      </p>
+      <p>
+        This biodiversity is unevenly distributed across Earth’s biomes, where microorganisms collectively act to keep the planet’s machinery running. Our mission is to understand who they are, how they evolve, and how they modify their surrounding environment, particularly in soils. Ultimately, we aim to learn how to manipulate these microbiomes to restore these mechanisms and return our habitats to their original state.
       </p>
     </div>
 
