@@ -11,7 +11,6 @@
       --secondary: #3a7f5f;
       --bg: #f4f6f5;
       --text: #1a1a1a;
-      --card: #ffffff;
     }
 
     * { box-sizing: border-box; }
@@ -25,9 +24,7 @@
 
     /* ===== HEADER ===== */
     header {
-      height: auto;
       background: transparent;
-      color: black;
       display: flex;
       align-items: center;
       padding: 1.5rem 2rem 1rem 2rem;
@@ -63,8 +60,6 @@
       font-weight: 400;
     }
 
-    nav a:hover { opacity: 1; }
-
     /* ===== MAIN LAYOUT ===== */
     main {
       display: grid;
@@ -77,14 +72,10 @@
 
     /* ===== LEFT COLUMN ===== */
     .sidebar {
-      background: transparent;
-      border-radius: 0;
       padding: 0;
-      box-shadow: none;
-      align-self: start;
     }
 
-    .sidebar img {
+    .sidebar img.logo {
       max-width: 260px;
       display: block;
       margin: 0 auto 1.5rem;
@@ -101,6 +92,19 @@
       font-size: 0.95rem;
     }
 
+    .location-link {
+      text-decoration: none;
+      color: inherit;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .location-link img {
+      width: 1.15rem;
+      height: 1.15rem;
+    }
+
     /* ===== RIGHT COLUMN ===== */
     .content {
       display: flex;
@@ -108,14 +112,7 @@
       gap: 2rem;
     }
 
-    .card {
-      background: transparent;
-      border-radius: 0;
-      padding: 0;
-      box-shadow: none;
-    }
-
-    .card h2 {
+    .content h2 {
       margin-top: 0;
       color: var(--primary);
     }
@@ -158,13 +155,18 @@
 
   <!-- LEFT COLUMN -->
   <aside class="sidebar">
-    <img src="LB2M-logo.png" alt="Logo LB2M" style="display:block;margin:0 auto 1.5rem;" />
+    <img src="images/LB2M-logo.png" alt="Logo LB2M" class="logo" />
 
     <h3>Localização</h3>
     <p>
-      <a href="https://maps.app.goo.gl/zhqhJKHo9w7rZH799" target="_blank" style="text-decoration:none;color:inherit;display:inline-flex;align-items:center;gap:0.4rem;">
-        <span style="font-size:1.15rem;">📍</span>
-        <span>Universidade Estadual Paulista (UNESP)<br/>Câmpus Bauru</span>
+      <a href="https://maps.app.goo.gl/zhqhJKHo9w7rZH799"
+         target="_blank"
+         class="location-link">
+        <img src="images/gps_icon.png" alt="Localização" />
+        <span>
+          Universidade Estadual Paulista (UNESP)<br />
+          Câmpus Bauru
+        </span>
       </a>
     </p>
 
@@ -176,14 +178,14 @@
   <!-- RIGHT COLUMN -->
   <section class="content">
 
-    <div class="card">
+    <div>
       <h2>Bem-vindo ao LB2M</h2>
       <p>
         O Laboratório de Biotecnologia e Bioinformática de Microrganismos (LB2M) é composto por microbiologistas com sólida formação e profunda compreensão dos mecanismos moleculares envolvidos na evolução e adaptação de microrganismos. Esses conhecimentos são aplicados de forma integrada em projetos acadêmicos e de inovação voltados à bioprospecção e à biotecnologia microbiana.
       </p>
     </div>
 
-    <div class="card">
+    <div>
       <h2>Coordenação</h2>
       <p>
         Filipe Matteoli é professor da Universidade Estadual Paulista (UNESP), atuando nas áreas de microbiologia, genômica e bioinformática. Desenvolve pesquisas voltadas à ecologia microbiana, evolução de microrganismos e aplicações biotecnológicas, com forte integração entre dados experimentais e análise computacional.
