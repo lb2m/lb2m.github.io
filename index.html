@@ -55,6 +55,7 @@
       text-decoration: none;
       font-size: 1.15rem;
       font-weight: 400;
+      cursor: pointer;
     }
 
     /* ===== MAIN ===== */
@@ -108,6 +109,15 @@
     .content h2 {
       margin-top: 0;
       color: var(--primary);
+    }
+
+    /* ===== PAGE SECTIONS ===== */
+    .page-section {
+      display: none;
+    }
+
+    .page-section.active {
+      display: block;
     }
 
     /* ===== PUBLICATIONS ===== */
@@ -177,28 +187,29 @@
   <nav>
     <ul>
       <li style="margin-left:2rem;">
-        <a href="#members" data-lang="pt">Membros</a>
-        <a href="#members" data-lang="en">Members</a>
+        <a onclick="showSection('home')">Home</a>
       </li>
       <li>
-        <a href="#publications" data-lang="pt">Publicações</a>
-        <a href="#publications" data-lang="en">Publications</a>
+        <a onclick="showSection('publications')"
+           data-lang="pt">Publicações</a>
+        <a onclick="showSection('publications')"
+           data-lang="en">Publications</a>
       </li>
       <li>
-        <a href="#gallery" data-lang="pt">Galeria</a>
-        <a href="#gallery" data-lang="en">Gallery</a>
+        <a data-lang="pt">Galeria</a>
+        <a data-lang="en">Gallery</a>
       </li>
       <li>
-        <a href="#activities" data-lang="pt">Atividades</a>
-        <a href="#activities" data-lang="en">Activities</a>
+        <a data-lang="pt">Atividades</a>
+        <a data-lang="en">Activities</a>
       </li>
       <li>
-        <a href="#teaching" data-lang="pt">Ensino</a>
-        <a href="#teaching" data-lang="en">Teaching</a>
+        <a data-lang="pt">Ensino</a>
+        <a data-lang="en">Teaching</a>
       </li>
       <li>
-        <a href="#inclusion" data-lang="pt">Inclusão</a>
-        <a href="#inclusion" data-lang="en">Inclusion</a>
+        <a data-lang="pt">Inclusão</a>
+        <a data-lang="en">Inclusion</a>
       </li>
     </ul>
   </nav>
@@ -232,52 +243,35 @@
   <!-- RIGHT COLUMN -->
   <section class="content">
 
-    <!-- BEM-VINDO -->
-    <div data-lang="pt">
-      <h2>Bem-vindo ao LB2M</h2>
-      <p>
-        O Laboratório de Biotecnologia e Bioinformática de Microrganismos (LB2M) é composto por microbiologistas com sólida formação e profunda compreensão dos mecanismos moleculares envolvidos na evolução e adaptação de microrganismos. Esses conhecimentos são aplicados de forma integrada em projetos acadêmicos e de inovação voltados à bioprospecção e à biotecnologia microbiana.
-      </p>
-      <p>
-        Os tópicos abordados em nossas pesquisas envolvem a sistemática, evolução e ecologia de bactérias de biomas brasileiros. Também estudamos como bactérias, fungos e protistas interagem no solo, e como essas interações alteram as propriedades físico-químicas do solo e influenciam as plantas. Possuímos colaboradores de outras instituições do Brasil, da América do Sul e do mundo.
-      </p>
+    <!-- HOME -->
+    <div id="home-section" class="page-section active">
+
+      <!-- BEM-VINDO -->
+      <div data-lang="pt">
+        <h2>Bem-vindo ao LB2M</h2>
+        <p>O Laboratório de Biotecnologia e Bioinformática de Microrganismos (LB2M)...</p>
+      </div>
+
+      <div data-lang="en">
+        <h2>Welcome to LB2M</h2>
+        <p>The Laboratory of Biotechnology and Bioinformatics of Microorganisms (LB2M)...</p>
+      </div>
+
+      <!-- COORDENAÇÃO -->
+      <div data-lang="pt">
+        <h2>Coordenação</h2>
+        <p><strong>Filipe P. Matteoli</strong></p>
+      </div>
+
+      <div data-lang="en">
+        <h2>Coordination</h2>
+        <p><strong>Filipe P. Matteoli</strong></p>
+      </div>
+
     </div>
 
-    <div data-lang="en">
-      <h2>Welcome to LB2M</h2>
-      <p>
-        The Laboratory of Biotechnology and Bioinformatics of Microorganisms (LB2M) is composed of microbiologists with strong academic training and deep understanding of the molecular mechanisms underlying microbial evolution and adaptation. This expertise is integrated into academic and innovation-driven projects focused on microbial bioprospecting and biotechnology.
-      </p>
-      <p>
-        Our research topics include the systematics, evolution, and ecology of bacteria from Brazilian biomes. We also investigate how bacteria, fungi, and protists interact in soils, and how these interactions modify soil physicochemical properties and influence plant performance. We collaborate with institutions from Brazil, South America, and other regions worldwide.
-      </p>
-    </div>
-
-    <!-- COORDENAÇÃO -->
-    <div data-lang="pt">
-      <h2>Coordenação</h2>
-      <p><strong>Filipe P. Matteoli</strong></p>
-      <p>
-        Comparativamente, descobrimos mais sobre o Universo do que sobre a biodiversidade microbiana. Isso não deveria surpreender, uma vez que a microbiologia foi fundada por volta de 1880, com pouco mais de 150 anos. Ainda desconhecemos a absoluta maioria da biodiversidade de fungos, bactérias, arqueias e protistas, o que se reflete em bancos de dados imprecisos e frequentes incertezas taxonômicas.
-      </p>
-      <p>
-        Essa biodiversidade distribui-se de maneira não uniforme nos biomas da Terra, onde, em conjunto, os microrganismos atuam para manter as engrenagens do planeta em funcionamento. Nossa missão é compreender quem eles são, como evoluem e como modificam o ambiente que os cerca, particularmente nos solos. Buscamos aprender a manipular esses microbiomas para restaurar essas engrenagens e retornar nossos habitats ao seu estado original.
-      </p>
-    </div>
-
-    <div data-lang="en">
-      <h2>Coordination</h2>
-      <p><strong>Filipe P. Matteoli</strong></p>
-      <p>
-        Comparatively, we know more about the Universe than about microbial biodiversity. This should not be surprising, as microbiology was founded around 1880 and is little more than 150 years old. We still lack knowledge of the vast majority of fungal, bacterial, archaeal, and protistan diversity, which is reflected in imprecise databases and persistent taxonomic uncertainty.
-      </p>
-      <p>
-        This biodiversity is unevenly distributed across Earth’s biomes, where microorganisms collectively act to keep the planet’s machinery running. Our mission is to understand who they are, how they evolve, and how they modify their surrounding environment, particularly in soils. Ultimately, we aim to learn how to manipulate these microbiomes to restore these mechanisms and return our habitats to their original state.
-      </p>
-    </div>
-
-    <!-- PUBLICAÇÕES -->
-    <div id="publications">
+    <!-- PUBLICATIONS -->
+    <div id="publications-section" class="page-section">
       <h2>Publicações / Publications</h2>
       <div id="pub-list">
         <p>Carregando publicações...</p>
@@ -300,6 +294,19 @@
     document.documentElement.lang = lang;
   }
 
+  function showSection(section) {
+    document.querySelectorAll('.page-section')
+      .forEach(s => s.classList.remove('active'));
+
+    document.getElementById(section + '-section')
+      .classList.add('active');
+
+    if (section === 'publications' && !window.pubsLoaded) {
+      loadPublications();
+      window.pubsLoaded = true;
+    }
+  }
+
   async function loadPublications() {
     const ORCID = "0000-0003-4981-100X";
     const url = `https://pub.orcid.org/v3.0/${ORCID}/works`;
@@ -320,14 +327,13 @@
         const w = group["work-summary"][0];
         const title = w.title?.title?.value || "Untitled";
         const year = w["publication-date"]?.year?.value || "—";
-        const type = w.type || "";
         let link = "";
 
         const ids = w["external-ids"]?.["external-id"] || [];
         const doi = ids.find(id => id["external-id-type"] === "doi");
         if (doi) link = `https://doi.org/${doi["external-id-value"]}`;
 
-        pubs.push({ year, title, type, link });
+        pubs.push({ year, title, link });
       });
 
       pubs.sort((a, b) => b.year.localeCompare(a.year));
@@ -337,7 +343,6 @@
         div.innerHTML = `
           <strong>${p.year}</strong> — 
           ${p.link ? `<a href="${p.link}" target="_blank">${p.title}</a>` : p.title}
-          <div class="meta">${p.type}</div>
         `;
         container.appendChild(div);
       });
@@ -348,8 +353,6 @@
       console.error(e);
     }
   }
-
-  loadPublications();
 </script>
 
 </body>
