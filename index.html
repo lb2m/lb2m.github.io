@@ -235,7 +235,7 @@
 
   <section class="content">
 
-    <!-- HOME (ORIGINAL, SEM ALTERAÇÕES) -->
+    <!-- HOME (ORIGINAL) -->
     <div id="home-section" class="page-section active">
 
       <div data-lang="pt">
@@ -274,7 +274,7 @@
 
     </div>
 
-    <!-- TEAM (DINÂMICO VIA JSON) -->
+    <!-- TEAM -->
     <div id="team-section" class="page-section">
       <h2 data-lang="pt">Alunos de pós-graduação</h2>
       <h2 data-lang="en">Post-graduate students</h2>
@@ -318,6 +318,11 @@ function showSection(section) {
     loadTeam();
     window.teamLoaded = true;
   }
+
+  if (section === 'publications' && !window.pubsLoaded) {
+    loadPublications();
+    window.pubsLoaded = true;
+  }
 }
 
 async function loadTeam() {
@@ -346,6 +351,33 @@ async function loadTeam() {
   const alumni = document.getElementById("alumni-container");
   alumni.innerHTML = "";
   data.alumni.forEach(a => alumni.innerHTML += `<p>${a}</p>`);
+}
+
+async function loadPublications() {
+  const ORCID = "0000-0003-4981-100X";
+  const res = await fetch(`https://pub.orcid.org/v3.0/${ORCID}/works`, {
+    headers: { Accept: "application/json" }
+  });
+
+  const data = await res.json();
+  const container = document.getElementById("pub-list");
+  container.innerHTML = "";
+
+  data.group.forEach(g => {
+    const w = g["work-summary"][0];
+    const title = w.title?.title?.value || "Untitled";
+    const year = w["publication-date"]?.year?.value || "";
+    const doi = w["external-ids"]?.["external-id"]
+      ?.find(id => id["external-id-type"] === "doi");
+
+    const link = doi ? `https://doi.org/${doi["external-id-value"]}` : null;
+
+    container.innerHTML += `
+      <div>
+        <strong>${year}</strong> —
+        ${link ? `<a href="${link}" target="_blank">${title}</a>` : title}
+      </div>`;
+  });
 }
 </script>
 
