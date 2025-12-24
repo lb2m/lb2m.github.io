@@ -58,6 +58,11 @@
       cursor: pointer;
     }
 
+    nav a.inactive {
+      opacity: 0.6;
+      cursor: default;
+    }
+
     /* ===== MAIN ===== */
     main {
       display: grid;
@@ -130,11 +135,6 @@
       text-decoration: underline;
     }
 
-    #pub-list .meta {
-      font-size: 0.9rem;
-      color: #555;
-    }
-
     /* ===== LANGUAGE CONTROL ===== */
     [data-lang] { display: none; }
     body.lang-pt [data-lang="pt"] { display: block; }
@@ -185,6 +185,26 @@
         <a onclick="showSection('publications')" data-lang="pt">Publicações</a>
         <a onclick="showSection('publications')" data-lang="en">Publications</a>
       </li>
+      <li>
+        <a class="inactive" data-lang="pt">Membros</a>
+        <a class="inactive" data-lang="en">Members</a>
+      </li>
+      <li>
+        <a class="inactive" data-lang="pt">Galeria</a>
+        <a class="inactive" data-lang="en">Gallery</a>
+      </li>
+      <li>
+        <a class="inactive" data-lang="pt">Atividades</a>
+        <a class="inactive" data-lang="en">Activities</a>
+      </li>
+      <li>
+        <a class="inactive" data-lang="pt">Ensino</a>
+        <a class="inactive" data-lang="en">Teaching</a>
+      </li>
+      <li>
+        <a class="inactive" data-lang="pt">Inclusão</a>
+        <a class="inactive" data-lang="en">Inclusion</a>
+      </li>
     </ul>
   </nav>
 </header>
@@ -220,42 +240,31 @@
     <!-- HOME -->
     <div id="home-section" class="page-section active">
 
-      <!-- BEM-VINDO -->
       <div data-lang="pt">
         <h2>Bem-vindo ao LB2M</h2>
         <p>
-          O Laboratório de Biotecnologia e Bioinformática de Microrganismos (LB2M) é composto por microbiologistas com sólida formação e profunda compreensão dos mecanismos moleculares envolvidos na evolução e adaptação de microrganismos. Esses conhecimentos são aplicados de forma integrada em projetos acadêmicos e de inovação voltados à bioprospecção e à biotecnologia microbiana.
+          O Laboratório de Biotecnologia e Bioinformática de Microrganismos (LB2M) é composto por microbiologistas com sólida formação e profunda compreensão dos mecanismos moleculares envolvidos na evolução e adaptação de microrganismos.
         </p>
         <p>
-          Os tópicos abordados em nossas pesquisas envolvem a sistemática, evolução e ecologia de bactérias de biomas brasileiros. Também estudamos como bactérias, fungos e protistas interagem no solo, e como essas interações alteram as propriedades físico-químicas do solo e influenciam as plantas. Possuímos colaboradores de outras instituições do Brasil, da América do Sul e do mundo.
+          Os tópicos abordados em nossas pesquisas envolvem a sistemática, evolução e ecologia de bactérias de biomas brasileiros, bem como interações microbianas no solo.
         </p>
       </div>
 
       <div data-lang="en">
         <h2>Welcome to LB2M</h2>
         <p>
-          The Laboratory of Biotechnology and Bioinformatics of Microorganisms (LB2M) is composed of microbiologists with strong academic training and deep understanding of the molecular mechanisms underlying microbial evolution and adaptation.
-        </p>
-        <p>
-          Our research includes microbial systematics, evolution and ecology in Brazilian biomes, as well as soil microbial interactions affecting physicochemical properties and plant performance.
+          The Laboratory of Biotechnology and Bioinformatics of Microorganisms (LB2M) focuses on microbial evolution, ecology and biotechnology.
         </p>
       </div>
 
-      <!-- COORDENAÇÃO -->
       <div data-lang="pt">
         <h2>Coordenação</h2>
         <p><strong>Filipe P. Matteoli</strong></p>
-        <p>
-          Comparativamente, descobrimos mais sobre o Universo do que sobre a biodiversidade microbiana...
-        </p>
       </div>
 
       <div data-lang="en">
         <h2>Coordination</h2>
         <p><strong>Filipe P. Matteoli</strong></p>
-        <p>
-          Comparatively, we know more about the Universe than about microbial biodiversity...
-        </p>
       </div>
 
     </div>
