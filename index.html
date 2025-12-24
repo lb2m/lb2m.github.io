@@ -115,7 +115,6 @@
     .page-section { display: none; }
     .page-section.active { display: block; }
 
-    /* ===== TEAM ===== */
     .member-card {
       display: flex;
       gap: 1.2rem;
@@ -149,10 +148,6 @@
       text-decoration: none;
     }
 
-    #pub-list a:hover {
-      text-decoration: underline;
-    }
-
     [data-lang] { display: none; }
     body.lang-pt [data-lang="pt"] { display: block; }
     body.lang-en [data-lang="en"] { display: block; }
@@ -164,20 +159,11 @@
       color: #555;
     }
 
-    .lang-footer {
-      margin-top: 0.5rem;
-      font-size: 0.85rem;
-    }
-
     .lang-footer span {
       cursor: pointer;
       margin: 0 0.4rem;
       font-weight: 600;
       opacity: 0.7;
-    }
-
-    .lang-footer span:hover {
-      opacity: 1;
     }
 
     @media (max-width: 900px) {
@@ -235,23 +221,38 @@
 
   <section class="content">
 
-    <!-- HOME (INALTERADA) -->
     <div id="home-section" class="page-section active">
-      <!-- TODO o conteúdo da Home permanece exatamente como você colou -->
-      <!-- (mantido acima, não repetido aqui por brevidade) -->
-      <!-- ⚠️ NÃO ALTEREI NENHUMA PALAVRA -->
-      <!-- O navegador exibirá normalmente -->
-      <!-- (conteúdo já presente no arquivo) -->
+
+      <div data-lang="pt">
+        <h2>Bem-vindo ao LB2M</h2>
+        <p>O Laboratório de Biotecnologia e Bioinformática de Microrganismos (LB2M) é composto por microbiologistas com sólida formação e profunda compreensão dos mecanismos moleculares envolvidos na evolução e adaptação de microrganismos. Esses conhecimentos são aplicados de forma integrada em projetos acadêmicos e de inovação voltados à bioprospecção e à biotecnologia microbiana.</p>
+        <p>Os tópicos abordados em nossas pesquisas envolvem a sistemática, evolução e ecologia de bactérias de biomas brasileiros. Também estudamos como bactérias, fungos e protistas interagem no solo e como essas interações alteram as propriedades físico-químicas do solo e influenciam as plantas. Possuímos colaboradores de outras instituições do Brasil, da América do Sul e do mundo.</p>
+
+        <h2>Coordenação</h2>
+        <p><strong>Filipe P. Matteoli</strong></p>
+        <p>Comparativamente, descobrimos mais sobre o Universo do que sobre a biodiversidade microbiana. Isso não deveria surpreender, uma vez que a microbiologia foi fundada por volta de 1880, com pouco mais de 150 anos. Ainda desconhecemos a absoluta maioria da biodiversidade de fungos, bactérias, arqueias e protistas, o que se reflete em bancos de dados imprecisos e frequentes incertezas taxonômicas.</p>
+        <p>Essa biodiversidade distribui-se de maneira não uniforme nos biomas da Terra, onde, em conjunto, os microrganismos atuam para manter as engrenagens do planeta em funcionamento. Nossa missão é compreender quem eles são, como evoluem e como modificam o ambiente que os cerca, particularmente nos solos. Buscamos aprender a manipular esses microbiomas para restaurar essas engrenagens e retornar nossos habitats ao seu estado original.</p>
+      </div>
+
+      <div data-lang="en">
+        <h2>Welcome to LB2M</h2>
+        <p>The Laboratory of Microbial Biotechnology and Bioinformatics (LB2M) comprises microbiologists with strong academic training and a deep understanding of the molecular mechanisms underlying microbial evolution and adaptation. This expertise is integrated into academic and innovation-driven projects focused on microbial bioprospecting and biotechnology.</p>
+        <p>Our research topics include the systematics, evolution, and ecology of bacteria from Brazilian biomes. We also investigate how bacteria, fungi, and protists interact in soils, and how these interactions modify soil physicochemical properties and influence plant performance. We collaborate with institutions from Brazil, South America, and other regions worldwide.</p>
+
+        <h2>Coordination</h2>
+        <p><strong>Filipe P. Matteoli</strong></p>
+        <p>Comparatively, we know more about the Universe than about microbial biodiversity. This should not be surprising, as microbiology was founded around 1880 and is little more than 150 years old. We still lack knowledge of the vast majority of fungal, bacterial, archaeal, and protistan diversity, which is reflected in imprecise databases and persistent taxonomic uncertainty.</p>
+        <p>This biodiversity is unevenly distributed across Earth’s biomes, where microorganisms collectively act to keep the planet’s machinery running. Our mission is to understand who they are, how they evolve, and how they modify their surrounding environment, particularly in soils. Ultimately, we aim to learn how to manipulate these microbiomes to restore these mechanisms and return our habitats to their original state.</p>
+      </div>
+
     </div>
 
-    <!-- TEAM -->
     <div id="team-section" class="page-section">
-
       <h2 data-lang="pt">Alunos de pós-graduação</h2>
       <h2 data-lang="en">Post-graduate students</h2>
 
       <div class="member-card">
-        <img src="images/anonymous_icon.png" alt="">
+        <img src="images/anonymous_icon.png" />
         <div>
           <strong>Aluno de Pós 1</strong>
           <p>Texto genérico de aproximadamente 700 caracteres descrevendo formação, linha de pesquisa, interesses científicos, métodos utilizados e inserção do aluno no contexto do laboratório.</p>
@@ -259,7 +260,7 @@
       </div>
 
       <div class="member-card">
-        <img src="images/anonymous_icon.png" alt="">
+        <img src="images/anonymous_icon.png" />
         <div>
           <strong>Aluno de Pós 2</strong>
           <p>Texto genérico de aproximadamente 700 caracteres descrevendo formação, linha de pesquisa, interesses científicos, métodos utilizados e inserção do aluno no contexto do laboratório.</p>
@@ -270,7 +271,7 @@
       <h2 data-lang="en">Undergraduate students</h2>
 
       <div class="member-card">
-        <img src="images/anonymous_icon.png" alt="">
+        <img src="images/anonymous_icon.png" />
         <div>
           <strong>Aluno de Graduação 1</strong>
           <p>Texto genérico curto (~300 caracteres) descrevendo tema de IC e principais interesses.</p>
@@ -278,7 +279,7 @@
       </div>
 
       <div class="member-card">
-        <img src="images/anonymous_icon.png" alt="">
+        <img src="images/anonymous_icon.png" />
         <div>
           <strong>Aluno de Graduação 2</strong>
           <p>Texto genérico curto (~300 caracteres) descrevendo tema de IC e principais interesses.</p>
@@ -286,7 +287,7 @@
       </div>
 
       <div class="member-card">
-        <img src="images/anonymous_icon.png" alt="">
+        <img src="images/anonymous_icon.png" />
         <div>
           <strong>Aluno de Graduação 3</strong>
           <p>Texto genérico curto (~300 caracteres) descrevendo tema de IC e principais interesses.</p>
@@ -298,10 +299,8 @@
         <p>Anna Lucia Costa, Graduação</p>
         <p>Beatriz Augusto Domingos, Graduação</p>
       </div>
-
     </div>
 
-    <!-- PUBLICATIONS -->
     <div id="publications-section" class="page-section">
       <h2>Publicações / Publications</h2>
       <div id="pub-list"><p>Carregando publicações...</p></div>
@@ -323,11 +322,8 @@ function setLang(lang) {
 }
 
 function showSection(section) {
-  document.querySelectorAll('.page-section')
-    .forEach(s => s.classList.remove('active'));
-
-  document.getElementById(section + '-section')
-    .classList.add('active');
+  document.querySelectorAll('.page-section').forEach(s => s.classList.remove('active'));
+  document.getElementById(section + '-section').classList.add('active');
 
   if (section === 'publications' && !window.pubsLoaded) {
     loadPublications();
@@ -337,10 +333,8 @@ function showSection(section) {
 
 async function loadPublications() {
   const ORCID = "0000-0003-4981-100X";
-  const res = await fetch(
-    `https://pub.orcid.org/v3.0/${ORCID}/works`,
-    { headers: { Accept: "application/json" } }
-  );
+  const res = await fetch(`https://pub.orcid.org/v3.0/${ORCID}/works`,
+    { headers: { Accept: "application/json" } });
 
   const data = await res.json();
   const container = document.getElementById("pub-list");
