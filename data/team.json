@@ -2,13 +2,13 @@
   "postgrad": [
     {
       "name": {
-        "pt": "Aluno de Pós 1",
-        "en": "Graduate Student 1"
+        "pt": "Vinicius Henrique de Oliveira Franzote",
+        "en": "Vinicius Henrique de Oliveira Franzote"
       },
-      "photo": "images/anonymous_icon.png",
+      "photo": "images/Vinicius_Henrique.png",
       "description": {
-        "pt": "Texto genérico de aproximadamente 700 caracteres descrevendo formação, linha de pesquisa, interesses científicos, métodos utilizados e inserção do aluno no contexto do laboratório.",
-        "en": "Generic text of approximately 700 characters describing academic background, research line, scientific interests, methods used, and the student's role within the laboratory."
+        "pt": "Vinicius é mestrando do Programa de Pós-Graduação em Biociências da Universidade Estadual Paulista (UNESP) e graduando em Bacharelado em Sistemas de Informação pela mesma instituição. Sua pesquisa de mestrado concentra-se no estudo das enzimas do citocromo P450 (CYPs) no filo Acidobacteriota, um grupo de bactérias pouco explorado. Apaixonado por bioinformática, Vinicius dedica-se a integrar biologia e computação, utilizando ferramentas computacionais para desvendar questões biológicas. Seus principais interesses científicos incluem genômica comparativa, análise filogenética, caracterização funcional de proteínas e aplicação de métodos de ciência de dados e aprendizado de máquina à biologia molecular microbiana.",
+        "en": "Vinicius is a master's student in the Graduate Program in Biosciences at São Paulo State University (UNESP) and an undergraduate student in Bachelor of Information Systems at the same institution. His master's reseach focuses on the study of cytochrome P450 enzymes (CYPs) in the phylum Acidobacteriota, an underexplored bacterial group. Passionate about bioinformatics, Vinicius is dedicated to integrating biology and computation, using computational tools to unravel biological questions. His main scientific interests include comparative genomics, phylogenetic analysis, functional characterization of proteins, and application of data science and machine learning methods to microbial molecular biology."
       }
     },
     {
