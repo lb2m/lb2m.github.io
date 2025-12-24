@@ -1,0 +1,67 @@
+{
+  "postgrad": [
+    {
+      "name": {
+        "pt": "Aluno de Pós 1",
+        "en": "Graduate Student 1"
+      },
+      "photo": "images/anonymous_icon.png",
+      "description": {
+        "pt": "Texto genérico de aproximadamente 700 caracteres descrevendo formação, linha de pesquisa, interesses científicos, métodos utilizados e inserção do aluno no contexto do laboratório.",
+        "en": "Generic text of approximately 700 characters describing academic background, research line, scientific interests, methods used, and the student's role within the laboratory."
+      }
+    },
+    {
+      "name": {
+        "pt": "Aluno de Pós 2",
+        "en": "Graduate Student 2"
+      },
+      "photo": "images/anonymous_icon.png",
+      "description": {
+        "pt": "Texto genérico de aproximadamente 700 caracteres descrevendo formação, linha de pesquisa, interesses científicos, métodos utilizados e inserção do aluno no contexto do laboratório.",
+        "en": "Generic text of approximately 700 characters describing academic background, research line, scientific interests, methods used, and the student's role within the laboratory."
+      }
+    }
+  ],
+
+  "undergrad": [
+    {
+      "name": {
+        "pt": "Aluno de Graduação 1",
+        "en": "Undergraduate Student 1"
+      },
+      "photo": "images/anonymous_icon.png",
+      "description": {
+        "pt": "Texto genérico curto (~300 caracteres) descrevendo tema de IC e principais interesses.",
+        "en": "Short generic text (~300 characters) describing undergraduate research topic and main interests."
+      }
+    },
+    {
+      "name": {
+        "pt": "Aluno de Graduação 2",
+        "en": "Undergraduate Student 2"
+      },
+      "photo": "images/anonymous_icon.png",
+      "description": {
+        "pt": "Texto genérico curto (~300 caracteres) descrevendo tema de IC e principais interesses.",
+        "en": "Short generic text (~300 characters) describing undergraduate research topic and main interests."
+      }
+    },
+    {
+      "name": {
+        "pt": "Aluno de Graduação 3",
+        "en": "Undergraduate Student 3"
+      },
+      "photo": "images/anonymous_icon.png",
+      "description": {
+        "pt": "Texto genérico curto (~300 caracteres) descrevendo tema de IC e principais interesses.",
+        "en": "Short generic text (~300 characters) describing undergraduate research topic and main interests."
+      }
+    }
+  ],
+
+  "alumni": [
+    "Anna Lucia Costa, Graduação",
+    "Beatriz Augusto Domingos, Graduação"
+  ]
+}
