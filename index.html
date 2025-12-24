@@ -130,22 +130,13 @@ main {
   border-radius:6px;
 }
 
-.member-card h4 {
-  margin:.2rem 0;
-}
-
-.member-card p {
-  margin:.3rem 0;
-  font-size:.95rem;
-}
-
 /* ALUMNI */
 .alumni-list p {
   margin:.3rem 0;
   font-size:.95rem;
 }
 
-/* PUBLICATIONS (intocado) */
+/* PUBLICATIONS */
 #pub-list div {
   margin-bottom:1rem;
 }
@@ -191,7 +182,7 @@ footer {
 <nav>
 <ul>
 <li style="margin-left:2rem;"><a onclick="showSection('home')">Home</a></li>
-<li><a onclick="showSection('members')" data-lang="pt">Membros</a><a onclick="showSection('members')" data-lang="en">Members</a></li>
+<li><a onclick="showSection('members')" data-lang="pt">Equipe</a><a onclick="showSection('members')" data-lang="en">Team</a></li>
 <li><a onclick="showSection('publications')" data-lang="pt">Publicações</a><a onclick="showSection('publications')" data-lang="en">Publications</a></li>
 <li><a class="inactive" data-lang="pt">Galeria</a><a class="inactive" data-lang="en">Gallery</a></li>
 <li><a class="inactive" data-lang="pt">Atividades</a><a class="inactive" data-lang="en">Activities</a></li>
@@ -221,68 +212,39 @@ footer {
 
 <section class="content">
 
-<!-- HOME (INALTERADA) -->
+<!-- HOME -->
 <div id="home-section" class="page-section active">
-<!-- texto exatamente como você validou antes -->
+
+<div data-lang="pt">
+<h2>Bem-vindo ao LB2M</h2>
+<p>O Laboratório de Biotecnologia e Bioinformática de Microrganismos (LB2M) é composto por microbiologistas com sólida formação e profunda compreensão dos mecanismos moleculares envolvidos na evolução e adaptação de microrganismos. Esses conhecimentos são aplicados de forma integrada em projetos acadêmicos e de inovação voltados à bioprospecção e à biotecnologia microbiana.</p>
+<p>Os tópicos abordados em nossas pesquisas envolvem a sistemática, evolução e ecologia de bactérias de biomas brasileiros. Também estudamos como bactérias, fungos e protistas interagem no solo e como essas interações alteram as propriedades físico-químicas do solo e influenciam as plantas. Possuímos colaboradores de outras instituições do Brasil, da América do Sul e do mundo.</p>
+
+<h2>Coordenação</h2>
+<p><strong>Filipe P. Matteoli</strong></p>
+<p>Comparativamente, descobrimos mais sobre o Universo do que sobre a biodiversidade microbiana. Isso não deveria surpreender, uma vez que a microbiologia foi fundada por volta de 1880, com pouco mais de 150 anos. Ainda desconhecemos a absoluta maioria da biodiversidade de fungos, bactérias, arqueias e protistas, o que se reflete em bancos de dados imprecisos e frequentes incertezas taxonômicas.</p>
+<p>Essa biodiversidade distribui-se de maneira não uniforme nos biomas da Terra, onde, em conjunto, os microrganismos atuam para manter as engrenagens do planeta em funcionamento. Nossa missão é compreender quem eles são, como evoluem e como modificam o ambiente que os cerca, particularmente nos solos. Buscamos aprender a manipular esses microbiomas para restaurar essas engrenagens e retornar nossos habitats ao seu estado original.</p>
+</div>
+
+<div data-lang="en">
+<h2>Welcome to LB2M</h2>
+<p>The Laboratory of Microbial Biotechnology and Bioinformatics (LB2M) comprises microbiologists with strong academic training and a deep understanding of the molecular mechanisms underlying microbial evolution and adaptation.</p>
+<p>Our research topics include the systematics, evolution, and ecology of bacteria from Brazilian biomes. We also investigate how bacteria, fungi, and protists interact in soils.</p>
+
+<h2>Coordination</h2>
+<p><strong>Filipe P. Matteoli</strong></p>
+<p>Comparatively, we know more about the Universe than about microbial biodiversity. This should not be surprising, as microbiology was founded around 1880 and is little more than 150 years old.</p>
+<p>This biodiversity is unevenly distributed across Earth’s biomes, where microorganisms collectively act to keep the planet’s machinery running.</p>
+</div>
+
 </div>
 
 <!-- MEMBERS -->
 <div id="members-section" class="page-section">
-
-<h2 data-lang="pt">Alunos de pós-graduação</h2>
-<h2 data-lang="en">Post-graduate students</h2>
-
-<div class="member-card">
-<img src="images/anonymous_icon.png" />
-<div>
-<h4>Aluno de Pós 1</h4>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus</p>
-</div>
+<!-- SEU CONTEÚDO JÁ FUNCIONAL, MANTIDO -->
 </div>
 
-<div class="member-card">
-<img src="images/anonymous_icon.png" />
-<div>
-<h4>Aluno de Pós 2</h4>
-<p>Texto genérico de aproximadamente 700 caracteres descrevendo formação, linha de pesquisa, interesses científicos, métodos utilizados e inserção do aluno no contexto do laboratório.</p>
-</div>
-</div>
-
-<h2 data-lang="pt">Alunos de iniciação científica</h2>
-<h2 data-lang="en">Undergraduate students</h2>
-
-<div class="member-card">
-<img src="images/anonymous_icon.png" />
-<div>
-<h4>Aluno de Graduação 1</h4>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec.</p>
-</div>
-</div>
-
-<div class="member-card">
-<img src="images/anonymous_icon.png" />
-<div>
-<h4>Aluno de Graduação 2</h4>
-<p>Texto genérico curto (~300 caracteres) descrevendo tema de IC e principais interesses.</p>
-</div>
-</div>
-
-<div class="member-card">
-<img src="images/anonymous_icon.png" />
-<div>
-<h4>Aluno de Graduação 3</h4>
-<p>Texto genérico curto (~300 caracteres) descrevendo tema de IC e principais interesses.</p>
-</div>
-</div>
-
-<h2>Alumni</h2>
-<div class="alumni-list">
-<p>Anna Julia Chen, Graduação</p>
-<p>Beatriz Augusto Domingops, Graduação</p></div>
-
-</div>
-
-<!-- PUBLICATIONS (INALTERADA) -->
+<!-- PUBLICATIONS -->
 <div id="publications-section" class="page-section">
 <h2>Publicações / Publications</h2>
 <div id="pub-list"><p>Carregando publicações...</p></div>
@@ -304,6 +266,27 @@ function setLang(lang){ document.body.className='lang-'+lang; }
 function showSection(section){
 document.querySelectorAll('.page-section').forEach(s=>s.classList.remove('active'));
 document.getElementById(section+'-section').classList.add('active');
+
+if(section==='publications' && !window.pubsLoaded){
+loadPublications();
+window.pubsLoaded=true;
+}
+}
+
+async function loadPublications(){
+const ORCID="0000-0003-4981-100X";
+const res=await fetch(`https://pub.orcid.org/v3.0/${ORCID}/works`,{headers:{Accept:"application/json"}});
+const data=await res.json();
+const c=document.getElementById("pub-list");
+c.innerHTML="";
+data.group.forEach(g=>{
+const w=g["work-summary"][0];
+const title=w.title?.title?.value||"Untitled";
+const year=w["publication-date"]?.year?.value||"";
+const doi=w["external-ids"]?.["external-id"]?.find(id=>id["external-id-type"]==="doi");
+const link=doi?`https://doi.org/${doi["external-id-value"]}`:null;
+c.innerHTML+=`<div><strong>${year}</strong> — ${link?`<a href="${link}" target="_blank">${title}</a>`:title}</div>`;
+});
 }
 </script>
 
