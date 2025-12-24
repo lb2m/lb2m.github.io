@@ -21,7 +21,6 @@
       color: var(--text);
     }
 
-    /* ===== HEADER ===== */
     header {
       display: flex;
       align-items: center;
@@ -63,7 +62,6 @@
       cursor: default;
     }
 
-    /* ===== MAIN ===== */
     main {
       display: grid;
       grid-template-columns: 1fr 2fr;
@@ -73,7 +71,6 @@
       padding: 0 2rem 4rem;
     }
 
-    /* ===== SIDEBAR ===== */
     .sidebar img.logo {
       max-width: 260px;
       display: block;
@@ -104,7 +101,6 @@
       height: 1.15rem;
     }
 
-    /* ===== CONTENT ===== */
     .content {
       display: flex;
       flex-direction: column;
@@ -116,11 +112,9 @@
       color: var(--primary);
     }
 
-    /* ===== PAGE SECTIONS ===== */
     .page-section { display: none; }
     .page-section.active { display: block; }
 
-    /* ===== PUBLICATIONS ===== */
     #pub-list div {
       margin-bottom: 1rem;
       line-height: 1.4;
@@ -135,12 +129,10 @@
       text-decoration: underline;
     }
 
-    /* ===== LANGUAGE CONTROL ===== */
     [data-lang] { display: none; }
     body.lang-pt [data-lang="pt"] { display: block; }
     body.lang-en [data-lang="en"] { display: block; }
 
-    /* ===== FOOTER ===== */
     footer {
       text-align: center;
       padding: 2rem;
@@ -185,33 +177,17 @@
         <a onclick="showSection('publications')" data-lang="pt">Publicações</a>
         <a onclick="showSection('publications')" data-lang="en">Publications</a>
       </li>
-      <li>
-        <a class="inactive" data-lang="pt">Membros</a>
-        <a class="inactive" data-lang="en">Members</a>
-      </li>
-      <li>
-        <a class="inactive" data-lang="pt">Galeria</a>
-        <a class="inactive" data-lang="en">Gallery</a>
-      </li>
-      <li>
-        <a class="inactive" data-lang="pt">Atividades</a>
-        <a class="inactive" data-lang="en">Activities</a>
-      </li>
-      <li>
-        <a class="inactive" data-lang="pt">Ensino</a>
-        <a class="inactive" data-lang="en">Teaching</a>
-      </li>
-      <li>
-        <a class="inactive" data-lang="pt">Inclusão</a>
-        <a class="inactive" data-lang="en">Inclusion</a>
-      </li>
+      <li><a class="inactive" data-lang="pt">Membros</a><a class="inactive" data-lang="en">Members</a></li>
+      <li><a class="inactive" data-lang="pt">Galeria</a><a class="inactive" data-lang="en">Gallery</a></li>
+      <li><a class="inactive" data-lang="pt">Atividades</a><a class="inactive" data-lang="en">Activities</a></li>
+      <li><a class="inactive" data-lang="pt">Ensino</a><a class="inactive" data-lang="en">Teaching</a></li>
+      <li><a class="inactive" data-lang="pt">Inclusão</a><a class="inactive" data-lang="en">Inclusion</a></li>
     </ul>
   </nav>
 </header>
 
 <main>
 
-  <!-- LEFT COLUMN -->
   <aside class="sidebar">
     <img src="images/LB2M-logo.png" alt="Logo LB2M" class="logo" />
 
@@ -219,9 +195,7 @@
     <h3 data-lang="en">Location</h3>
 
     <p>
-      <a href="https://maps.app.goo.gl/zhqhJKHo9w7rZH799"
-         target="_blank"
-         class="location-link">
+      <a href="https://maps.app.goo.gl/zhqhJKHo9w7rZH799" target="_blank" class="location-link">
         <img src="images/gps_icon.png" alt="Location" />
         <span data-lang="pt">Universidade Estadual Paulista (UNESP)<br/>Câmpus Bauru - SP, Brasil</span>
         <span data-lang="en">São Paulo State University (UNESP)<br/>Bauru Campus - SP, Brazil</span>
@@ -234,7 +208,6 @@
     <p>filipe.matteoli@unesp.br</p>
   </aside>
 
-  <!-- RIGHT COLUMN -->
   <section class="content">
 
     <!-- HOME -->
@@ -242,29 +215,28 @@
 
       <div data-lang="pt">
         <h2>Bem-vindo ao LB2M</h2>
-        <p>
-          O Laboratório de Biotecnologia e Bioinformática de Microrganismos (LB2M) é composto por microbiologistas com sólida formação e profunda compreensão dos mecanismos moleculares envolvidos na evolução e adaptação de microrganismos.
-        </p>
-        <p>
-          Os tópicos abordados em nossas pesquisas envolvem a sistemática, evolução e ecologia de bactérias de biomas brasileiros, bem como interações microbianas no solo.
-        </p>
+        <p>O Laboratório de Biotecnologia e Bioinformática de Microrganismos (LB2M) é composto por microbiologistas com sólida formação e profunda compreensão dos mecanismos moleculares envolvidos na evolução e adaptação de microrganismos. Esses conhecimentos são aplicados de forma integrada em projetos acadêmicos e de inovação voltados à bioprospecção e à biotecnologia microbiana.</p>
+        <p>Os tópicos abordados em nossas pesquisas envolvem a sistemática, evolução e ecologia de bactérias de biomas brasileiros. Também estudamos como bactérias, fungos e protistas interagem no solo e como essas interações alteram as propriedades físico-químicas do solo e influenciam as plantas. Possuímos colaboradores de outras instituições do Brasil, da América do Sul e do mundo.</p>
       </div>
 
       <div data-lang="en">
         <h2>Welcome to LB2M</h2>
-        <p>
-          The Laboratory of Biotechnology and Bioinformatics of Microorganisms (LB2M) focuses on microbial evolution, ecology and biotechnology.
-        </p>
+        <p>The Laboratory of Microbial Biotechnology and Bioinformatics (LB2M) comprises microbiologists with strong academic training and a deep understanding of the molecular mechanisms underlying microbial evolution and adaptation. This expertise is integrated into academic and innovation-driven projects focused on microbial bioprospecting and biotechnology.</p>
+        <p>Our research topics include the systematics, evolution, and ecology of bacteria from Brazilian biomes. We also investigate how bacteria, fungi, and protists interact in soils, and how these interactions modify soil physicochemical properties and influence plant performance. We collaborate with institutions from Brazil, South America, and other regions worldwide.</p>
       </div>
 
       <div data-lang="pt">
         <h2>Coordenação</h2>
         <p><strong>Filipe P. Matteoli</strong></p>
+        <p>Comparativamente, descobrimos mais sobre o Universo do que sobre a biodiversidade microbiana. Isso não deveria surpreender, uma vez que a microbiologia foi fundada por volta de 1880, com pouco mais de 150 anos. Ainda desconhecemos a absoluta maioria da biodiversidade de fungos, bactérias, arqueias e protistas, o que se reflete em bancos de dados imprecisos e frequentes incertezas taxonômicas.</p>
+        <p>Essa biodiversidade distribui-se de maneira não uniforme nos biomas da Terra, onde, em conjunto, os microrganismos atuam para manter as engrenagens do planeta em funcionamento. Nossa missão é compreender quem eles são, como evoluem e como modificam o ambiente que os cerca, particularmente nos solos. Buscamos aprender a manipular esses microbiomas para restaurar essas engrenagens e retornar nossos habitats ao seu estado original.</p>
       </div>
 
       <div data-lang="en">
         <h2>Coordination</h2>
         <p><strong>Filipe P. Matteoli</strong></p>
+        <p>Comparatively, we know more about the Universe than about microbial biodiversity. This should not be surprising, as microbiology was founded around 1880 and is little more than 150 years old. We still lack knowledge of the vast majority of fungal, bacterial, archaeal, and protistan diversity, which is reflected in imprecise databases and persistent taxonomic uncertainty.</p>
+        <p>This biodiversity is unevenly distributed across Earth’s biomes, where microorganisms collectively act to keep the planet’s machinery running. Our mission is to understand who they are, how they evolve, and how they modify their surrounding environment, particularly in soils. Ultimately, we aim to learn how to manipulate these microbiomes to restore these mechanisms and return our habitats to their original state.</p>
       </div>
 
     </div>
@@ -291,10 +263,8 @@
   }
 
   function showSection(section) {
-    document.querySelectorAll('.page-section')
-      .forEach(s => s.classList.remove('active'));
-    document.getElementById(section + '-section')
-      .classList.add('active');
+    document.querySelectorAll('.page-section').forEach(s => s.classList.remove('active'));
+    document.getElementById(section + '-section').classList.add('active');
 
     if (section === 'publications' && !window.pubsLoaded) {
       loadPublications();
@@ -315,9 +285,7 @@
       const w = g["work-summary"][0];
       const title = w.title?.title?.value || "Untitled";
       const year = w["publication-date"]?.year?.value || "";
-      const doi = w["external-ids"]?.["external-id"]
-        ?.find(id => id["external-id-type"] === "doi");
-
+      const doi = w["external-ids"]?.["external-id"]?.find(id => id["external-id-type"] === "doi");
       const link = doi ? `https://doi.org/${doi["external-id-value"]}` : null;
 
       container.innerHTML += `
