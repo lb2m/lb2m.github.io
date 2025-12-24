@@ -237,14 +237,43 @@
 
     <!-- HOME -->
     <div id="home-section" class="page-section active">
-      <!-- conteúdo idêntico ao seu stable_v3 -->
-      <!-- mantido sem alterações -->
-      <!-- (omite aqui por brevidade visual, mas no seu arquivo real já está) -->
+
+      <div data-lang="pt">
+        <h2>Bem-vindo ao LB2M</h2>
+        <p>O Laboratório de Biotecnologia e Bioinformática de Microrganismos (LB2M) é composto por microbiologistas com sólida formação e profunda compreensão dos mecanismos moleculares envolvidos na evolução e adaptação de microrganismos.</p>
+        <p>Os tópicos abordados em nossas pesquisas envolvem a sistemática, evolução e ecologia de bactérias de biomas brasileiros. Também estudamos como bactérias, fungos e protistas interagem no solo.</p>
+
+        <h2>Coordenação</h2>
+        <p><strong>Filipe P. Matteoli</strong></p>
+
+        <div class="coord-block">
+          <img src="images/FMatt.jpg" alt="Filipe P. Matteoli" class="coord-photo" />
+          <div>
+            <p>Comparativamente, descobrimos mais sobre o Universo do que sobre a biodiversidade microbiana...</p>
+          </div>
+        </div>
+      </div>
+
+      <div data-lang="en">
+        <h2>Welcome to LB2M</h2>
+        <p>The Laboratory of Microbial Biotechnology and Bioinformatics (LB2M) comprises microbiologists with strong academic training.</p>
+        <p>Our research topics include the systematics, evolution, and ecology of bacteria from Brazilian biomes.</p>
+
+        <h2>Coordination</h2>
+        <p><strong>Filipe P. Matteoli</strong></p>
+
+        <div class="coord-block">
+          <img src="images/FMatt.jpg" alt="Filipe P. Matteoli" class="coord-photo" />
+          <div>
+            <p>Comparatively, we know more about the Universe than about microbial biodiversity...</p>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <!-- TEAM -->
     <div id="team-section" class="page-section">
-
       <h2 data-lang="pt">Alunos de pós-graduação</h2>
       <h2 data-lang="en">Post-graduate students</h2>
       <div id="postgrad-container"></div>
@@ -255,7 +284,6 @@
 
       <h2>Alumni</h2>
       <div id="alumni-container" class="alumni-list"></div>
-
     </div>
 
     <!-- PUBLICATIONS -->
@@ -284,11 +312,6 @@ function showSection(section) {
   document.querySelectorAll('.page-section').forEach(s => s.classList.remove('active'));
   document.getElementById(section + '-section').classList.add('active');
 
-  if (section === 'publications' && !window.pubsLoaded) {
-    loadPublications();
-    window.pubsLoaded = true;
-  }
-
   if (section === 'team' && !window.teamLoaded) {
     loadTeam();
     window.teamLoaded = true;
@@ -300,13 +323,13 @@ async function loadTeam() {
   const data = await res.json();
   const lang = document.body.classList.contains("lang-en") ? "en" : "pt";
 
-  const renderMembers = (containerId, members) => {
-    const container = document.getElementById(containerId);
-    container.innerHTML = "";
-    members.forEach(m => {
-      container.innerHTML += `
+  const render = (id, list) => {
+    const c = document.getElementById(id);
+    c.innerHTML = "";
+    list.forEach(m => {
+      c.innerHTML += `
         <div class="member-card">
-          <img src="${m.photo}" alt="${m.name[lang]}" />
+          <img src="${m.photo}">
           <div>
             <strong>${m.name[lang]}</strong>
             <p>${m.description[lang]}</p>
@@ -315,40 +338,12 @@ async function loadTeam() {
     });
   };
 
-  renderMembers("postgrad-container", data.postgrad);
-  renderMembers("undergrad-container", data.undergrad);
+  render("postgrad-container", data.postgrad);
+  render("undergrad-container", data.undergrad);
 
-  const alumniContainer = document.getElementById("alumni-container");
-  alumniContainer.innerHTML = "";
-  data.alumni.forEach(a => {
-    alumniContainer.innerHTML += `<p>${a}</p>`;
-  });
-}
-
-async function loadPublications() {
-  const ORCID = "0000-0003-4981-100X";
-  const res = await fetch(`https://pub.orcid.org/v3.0/${ORCID}/works`,
-    { headers: { Accept: "application/json" } });
-
-  const data = await res.json();
-  const container = document.getElementById("pub-list");
-  container.innerHTML = "";
-
-  data.group.forEach(g => {
-    const w = g["work-summary"][0];
-    const title = w.title?.title?.value || "Untitled";
-    const year = w["publication-date"]?.year?.value || "";
-    const doi = w["external-ids"]?.["external-id"]
-      ?.find(id => id["external-id-type"] === "doi");
-
-    const link = doi ? `https://doi.org/${doi["external-id-value"]}` : null;
-
-    container.innerHTML += `
-      <div>
-        <strong>${year}</strong> —
-        ${link ? `<a href="${link}" target="_blank">${title}</a>` : title}
-      </div>`;
-  });
+  const alumni = document.getElementById("alumni-container");
+  alumni.innerHTML = "";
+  data.alumni.forEach(a => alumni.innerHTML += `<p>${a}</p>`);
 }
 </script>
 
