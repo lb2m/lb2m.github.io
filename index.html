@@ -235,13 +235,13 @@
 
   <section class="content">
 
-    <!-- HOME -->
+    <!-- HOME (ORIGINAL, SEM ALTERAÇÕES) -->
     <div id="home-section" class="page-section active">
 
       <div data-lang="pt">
         <h2>Bem-vindo ao LB2M</h2>
-        <p>O Laboratório de Biotecnologia e Bioinformática de Microrganismos (LB2M) é composto por microbiologistas com sólida formação e profunda compreensão dos mecanismos moleculares envolvidos na evolução e adaptação de microrganismos.</p>
-        <p>Os tópicos abordados em nossas pesquisas envolvem a sistemática, evolução e ecologia de bactérias de biomas brasileiros. Também estudamos como bactérias, fungos e protistas interagem no solo.</p>
+        <p>O Laboratório de Biotecnologia e Bioinformática de Microrganismos (LB2M) é composto por microbiologistas com sólida formação e profunda compreensão dos mecanismos moleculares envolvidos na evolução e adaptação de microrganismos. Esses conhecimentos são aplicados de forma integrada em projetos acadêmicos e de inovação voltados à bioprospecção e à biotecnologia microbiana.</p>
+        <p>Os tópicos abordados em nossas pesquisas envolvem a sistemática, evolução e ecologia de bactérias de biomas brasileiros. Também estudamos como bactérias, fungos e protistas interagem no solo e como essas interações alteram as propriedades físico-químicas do solo e influenciam as plantas. Possuímos colaboradores de outras instituições do Brasil, da América do Sul e do mundo.</p>
 
         <h2>Coordenação</h2>
         <p><strong>Filipe P. Matteoli</strong></p>
@@ -249,15 +249,16 @@
         <div class="coord-block">
           <img src="images/FMatt.jpg" alt="Filipe P. Matteoli" class="coord-photo" />
           <div>
-            <p>Comparativamente, descobrimos mais sobre o Universo do que sobre a biodiversidade microbiana...</p>
+            <p>Comparativamente, descobrimos mais sobre o Universo do que sobre a biodiversidade microbiana. Isso não deveria surpreender, uma vez que a microbiologia foi fundada por volta de 1880, há cerca de 150 anos. Ainda desconhecemos a absoluta maioria da biodiversidade de fungos, bactérias, arqueias e protistas, o que se reflete em bancos de dados imprecisos e frequentes incertezas taxonômicas.</p>
+            <p>Essa biodiversidade distribui-se de maneira não uniforme nos biomas da Terra, onde, em conjunto, os microrganismos atuam para manter as engrenagens do planeta em funcionamento. Nossa missão é compreender quem eles são, como evoluem e como modificam o ambiente que os cerca, particularmente nos solos. Buscamos aprender a manipular esses microbiomas para restaurar essas engrenagens e retornar nossos habitats ao seu estado original.</p>
           </div>
         </div>
       </div>
 
       <div data-lang="en">
         <h2>Welcome to LB2M</h2>
-        <p>The Laboratory of Microbial Biotechnology and Bioinformatics (LB2M) comprises microbiologists with strong academic training.</p>
-        <p>Our research topics include the systematics, evolution, and ecology of bacteria from Brazilian biomes.</p>
+        <p>The Laboratory of Microbial Biotechnology and Bioinformatics (LB2M) comprises microbiologists with strong academic training and a deep understanding of the molecular mechanisms underlying microbial evolution and adaptation. This expertise is integrated into academic and innovation-driven projects focused on microbial bioprospecting and biotechnology.</p>
+        <p>Our research topics include the systematics, evolution, and ecology of bacteria from Brazilian biomes. We also investigate how bacteria, fungi, and protists interact in soils, and how these interactions modify soil physicochemical properties and influence plant performance. We collaborate with institutions from Brazil, South America, and other regions worldwide.</p>
 
         <h2>Coordination</h2>
         <p><strong>Filipe P. Matteoli</strong></p>
@@ -265,14 +266,15 @@
         <div class="coord-block">
           <img src="images/FMatt.jpg" alt="Filipe P. Matteoli" class="coord-photo" />
           <div>
-            <p>Comparatively, we know more about the Universe than about microbial biodiversity...</p>
+            <p>Comparatively, we know more about the Universe than about microbial biodiversity. This should not be surprising, as microbiology was founded around 1880, around 150 years ago. We still lack knowledge of the vast majority of fungal, bacterial, archaeal, and protistan diversity, which is reflected in imprecise databases and persistent taxonomic uncertainty.</p>
+            <p>This biodiversity is unevenly distributed across Earth’s biomes, where microorganisms collectively act to keep the planet’s machinery running. Our mission is to understand who they are, how they evolve, and how they modify their surrounding environment, particularly in soils. Ultimately, we aim to learn how to manipulate these microbiomes to restore these mechanisms and return our habitats to their original state.</p>
           </div>
         </div>
       </div>
 
     </div>
 
-    <!-- TEAM -->
+    <!-- TEAM (DINÂMICO VIA JSON) -->
     <div id="team-section" class="page-section">
       <h2 data-lang="pt">Alunos de pós-graduação</h2>
       <h2 data-lang="en">Post-graduate students</h2>
@@ -329,7 +331,7 @@ async function loadTeam() {
     list.forEach(m => {
       c.innerHTML += `
         <div class="member-card">
-          <img src="${m.photo}">
+          <img src="${m.photo}" alt="${m.name[lang]}">
           <div>
             <strong>${m.name[lang]}</strong>
             <p>${m.description[lang]}</p>
