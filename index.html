@@ -110,6 +110,26 @@
       color: var(--primary);
     }
 
+    /* ===== PUBLICATIONS ===== */
+    #pub-list div {
+      margin-bottom: 1rem;
+      line-height: 1.4;
+    }
+
+    #pub-list a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    #pub-list a:hover {
+      text-decoration: underline;
+    }
+
+    #pub-list .meta {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
     /* ===== LANGUAGE CONTROL ===== */
     [data-lang] { display: none; }
     body.lang-pt [data-lang="pt"] { display: block; }
@@ -152,7 +172,7 @@
 
 <header>
   <h1 data-lang="pt">Laboratório de Biotecnologia e Bioinformática de Microrganismos</h1>
-  <h1 data-lang="en">Laboratory of Biotechnology and Bioinformatics of Microorganisms</h1>
+  <h1 data-lang="en">Laboratory of Microbial Biotechnology and Bioinformatics</h1>
 
   <nav>
     <ul>
@@ -212,6 +232,7 @@
   <!-- RIGHT COLUMN -->
   <section class="content">
 
+    <!-- BEM-VINDO -->
     <div data-lang="pt">
       <h2>Bem-vindo ao LB2M</h2>
       <p>
@@ -232,6 +253,7 @@
       </p>
     </div>
 
+    <!-- COORDENAÇÃO -->
     <div data-lang="pt">
       <h2>Coordenação</h2>
       <p><strong>Filipe P. Matteoli</strong></p>
@@ -254,6 +276,14 @@
       </p>
     </div>
 
+    <!-- PUBLICAÇÕES -->
+    <div id="publications">
+      <h2>Publicações / Publications</h2>
+      <div id="pub-list">
+        <p>Carregando publicações...</p>
+      </div>
+    </div>
+
   </section>
 </main>
 
@@ -269,6 +299,57 @@
     document.body.className = 'lang-' + lang;
     document.documentElement.lang = lang;
   }
+
+  async function loadPublications() {
+    const ORCID = "0000-0003-4981-100X";
+    const url = `https://pub.orcid.org/v3.0/${ORCID}/works`;
+
+    try {
+      const response = await fetch(url, {
+        headers: { "Accept": "application/json" }
+      });
+
+      const data = await response.json();
+      const works = data.group;
+      const container = document.getElementById("pub-list");
+      container.innerHTML = "";
+
+      const pubs = [];
+
+      works.forEach(group => {
+        const w = group["work-summary"][0];
+        const title = w.title?.title?.value || "Untitled";
+        const year = w["publication-date"]?.year?.value || "—";
+        const type = w.type || "";
+        let link = "";
+
+        const ids = w["external-ids"]?.["external-id"] || [];
+        const doi = ids.find(id => id["external-id-type"] === "doi");
+        if (doi) link = `https://doi.org/${doi["external-id-value"]}`;
+
+        pubs.push({ year, title, type, link });
+      });
+
+      pubs.sort((a, b) => b.year.localeCompare(a.year));
+
+      pubs.forEach(p => {
+        const div = document.createElement("div");
+        div.innerHTML = `
+          <strong>${p.year}</strong> — 
+          ${p.link ? `<a href="${p.link}" target="_blank">${p.title}</a>` : p.title}
+          <div class="meta">${p.type}</div>
+        `;
+        container.appendChild(div);
+      });
+
+    } catch (e) {
+      document.getElementById("pub-list").innerHTML =
+        "<p>Erro ao carregar publicações.</p>";
+      console.error(e);
+    }
+  }
+
+  loadPublications();
 </script>
 
 </body>
