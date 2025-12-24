@@ -173,11 +173,12 @@
       margin-top: 1rem;
     }
 
+    /* 🔧 AJUSTE FINO DE ALINHAMENTO DA FOTO */
     .coord-photo {
       width: 160px;
       border-radius: 6px;
       object-fit: cover;
-      margin-top: 0.35rem; /* AJUSTE FINO DE ALINHAMENTO */
+      margin-top: 0.35rem;
     }
 
     @media (max-width: 900px) {
@@ -189,4 +190,198 @@
 </head>
 
 <body class="lang-pt">
-<!-- O RESTO DO ARQUIVO SEGUE EXATAMENTE IGUAL AO stable_v3 -->
+
+<header>
+  <h1 data-lang="pt">Laboratório de Biotecnologia e Bioinformática de Microrganismos</h1>
+  <h1 data-lang="en">Laboratory of Microbial Biotechnology and Bioinformatics</h1>
+
+  <nav>
+    <ul>
+      <li style="margin-left:2rem;"><a onclick="showSection('home')">Home</a></li>
+      <li>
+        <a onclick="showSection('team')" data-lang="pt">Equipe</a>
+        <a onclick="showSection('team')" data-lang="en">Team</a>
+      </li>
+      <li>
+        <a onclick="showSection('publications')" data-lang="pt">Publicações</a>
+        <a onclick="showSection('publications')" data-lang="en">Publications</a>
+      </li>
+      <li><a class="inactive" data-lang="pt">Galeria</a><a class="inactive" data-lang="en">Gallery</a></li>
+      <li><a class="inactive" data-lang="pt">Atividades</a><a class="inactive" data-lang="en">Activities</a></li>
+      <li><a class="inactive" data-lang="pt">Ensino</a><a class="inactive" data-lang="en">Teaching</a></li>
+      <li><a class="inactive" data-lang="pt">Inclusão</a><a class="inactive" data-lang="en">Inclusion</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <aside class="sidebar">
+    <img src="images/LB2M-logo.png" alt="Logo LB2M" class="logo" />
+
+    <h3 data-lang="pt">Localização</h3>
+    <h3 data-lang="en">Location</h3>
+
+    <p>
+      <a href="https://maps.app.goo.gl/zhqhJKHo9w7rZH799" target="_blank" class="location-link">
+        <img src="images/gps_icon.png" alt="Location" />
+        <span data-lang="pt">Universidade Estadual Paulista (UNESP)<br/>Câmpus Bauru - SP, Brasil</span>
+        <span data-lang="en">São Paulo State University (UNESP)<br/>Bauru Campus - SP, Brazil</span>
+      </a>
+    </p>
+
+    <h3 data-lang="pt">Contato</h3>
+    <h3 data-lang="en">Contact</h3>
+    <p>filipe.matteoli@unesp.br</p>
+  </aside>
+
+  <section class="content">
+
+    <!-- HOME -->
+    <div id="home-section" class="page-section active">
+
+      <div data-lang="pt">
+        <h2>Bem-vindo ao LB2M</h2>
+        <p>O Laboratório de Biotecnologia e Bioinformática de Microrganismos (LB2M) é composto por microbiologistas com sólida formação e profunda compreensão dos mecanismos moleculares envolvidos na evolução e adaptação de microrganismos. Esses conhecimentos são aplicados de forma integrada em projetos acadêmicos e de inovação voltados à bioprospecção e à biotecnologia microbiana.</p>
+        <p>Os tópicos abordados em nossas pesquisas envolvem a sistemática, evolução e ecologia de bactérias de biomas brasileiros. Também estudamos como bactérias, fungos e protistas interagem no solo e como essas interações alteram as propriedades físico-químicas do solo e influenciam as plantas. Possuímos colaboradores de outras instituições do Brasil, da América do Sul e do mundo.</p>
+
+        <h2>Coordenação</h2>
+        <p><strong>Filipe P. Matteoli</strong></p>
+
+        <div class="coord-block">
+          <img src="images/FMatt.jpg" alt="Filipe P. Matteoli" class="coord-photo" />
+          <div>
+            <p>Comparativamente, descobrimos mais sobre o Universo do que sobre a biodiversidade microbiana. Isso não deveria surpreender, uma vez que a microbiologia foi fundada por volta de 1880, há cerca de 150 anos. Ainda desconhecemos a absoluta maioria da biodiversidade de fungos, bactérias, arqueias e protistas, o que se reflete em bancos de dados imprecisos e frequentes incertezas taxonômicas.</p>
+            <p>Essa biodiversidade distribui-se de maneira não uniforme nos biomas da Terra, onde, em conjunto, os microrganismos atuam para manter as engrenagens do planeta em funcionamento. Nossa missão é compreender quem eles são, como evoluem e como modificam o ambiente que os cerca, particularmente nos solos. Buscamos aprender a manipular esses microbiomas para restaurar essas engrenagens e retornar nossos habitats ao seu estado original.</p>
+          </div>
+        </div>
+      </div>
+
+      <div data-lang="en">
+        <h2>Welcome to LB2M</h2>
+        <p>The Laboratory of Microbial Biotechnology and Bioinformatics (LB2M) comprises microbiologists with strong academic training and a deep understanding of the molecular mechanisms underlying microbial evolution and adaptation. This expertise is integrated into academic and innovation-driven projects focused on microbial bioprospecting and biotechnology.</p>
+        <p>Our research topics include the systematics, evolution, and ecology of bacteria from Brazilian biomes. We also investigate how bacteria, fungi, and protists interact in soils, and how these interactions modify soil physicochemical properties and influence plant performance. We collaborate with institutions from Brazil, South America, and other regions worldwide.</p>
+
+        <h2>Coordination</h2>
+        <p><strong>Filipe P. Matteoli</strong></p>
+
+        <div class="coord-block">
+          <img src="images/FMatt.jpg" alt="Filipe P. Matteoli" class="coord-photo" />
+          <div>
+            <p>Comparatively, we know more about the Universe than about microbial biodiversity. This should not be surprising, as microbiology was founded around 1880, around 150 years ago. We still lack knowledge of the vast majority of fungal, bacterial, archaeal, and protistan diversity, which is reflected in imprecise databases and persistent taxonomic uncertainty.</p>
+            <p>This biodiversity is unevenly distributed across Earth’s biomes, where microorganisms collectively act to keep the planet’s machinery running. Our mission is to understand who they are, how they evolve, and how they modify their surrounding environment, particularly in soils. Ultimately, we aim to learn how to manipulate these microbiomes to restore these mechanisms and return our habitats to their original state.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- TEAM -->
+    <div id="team-section" class="page-section">
+      <h2 data-lang="pt">Alunos de pós-graduação</h2>
+      <h2 data-lang="en">Post-graduate students</h2>
+      <div id="postgrad-container"></div>
+
+      <h2 data-lang="pt">Alunos de iniciação científica</h2>
+      <h2 data-lang="en">Undergraduate students</h2>
+      <div id="undergrad-container"></div>
+
+      <h2>Alumni</h2>
+      <div id="alumni-container" class="alumni-list"></div>
+    </div>
+
+    <!-- PUBLICATIONS -->
+    <div id="publications-section" class="page-section">
+      <h2>Publicações / Publications</h2>
+      <div id="pub-list"><p>Carregando publicações...</p></div>
+    </div>
+
+  </section>
+</main>
+
+<footer>
+  <p>LB2M © 2025 · UNESP</p>
+  <div class="lang-footer">
+    <span onclick="setLang('pt')">PT</span> | <span onclick="setLang('en')">EN</span>
+  </div>
+</footer>
+
+<script>
+function setLang(lang) {
+  document.body.className = 'lang-' + lang;
+  if (window.teamLoaded) loadTeam();
+}
+
+function showSection(section) {
+  document.querySelectorAll('.page-section').forEach(s => s.classList.remove('active'));
+  document.getElementById(section + '-section').classList.add('active');
+
+  if (section === 'team' && !window.teamLoaded) {
+    loadTeam();
+    window.teamLoaded = true;
+  }
+
+  if (section === 'publications' && !window.pubsLoaded) {
+    loadPublications();
+    window.pubsLoaded = true;
+  }
+}
+
+async function loadTeam() {
+  const res = await fetch("data/team.json");
+  const data = await res.json();
+  const lang = document.body.classList.contains("lang-en") ? "en" : "pt";
+
+  const render = (id, list) => {
+    const c = document.getElementById(id);
+    c.innerHTML = "";
+    list.forEach(m => {
+      c.innerHTML += `
+        <div class="member-card">
+          <img src="${m.photo}" alt="${m.name[lang]}">
+          <div>
+            <strong>${m.name[lang]}</strong>
+            <p>${m.description[lang]}</p>
+          </div>
+        </div>`;
+    });
+  };
+
+  render("postgrad-container", data.postgrad);
+  render("undergrad-container", data.undergrad);
+
+  const alumni = document.getElementById("alumni-container");
+  alumni.innerHTML = "";
+  data.alumni.forEach(a => alumni.innerHTML += `<p>${a}</p>`);
+}
+
+async function loadPublications() {
+  const ORCID = "0000-0003-4981-100X";
+  const res = await fetch(`https://pub.orcid.org/v3.0/${ORCID}/works`, {
+    headers: { Accept: "application/json" }
+  });
+
+  const data = await res.json();
+  const container = document.getElementById("pub-list");
+  container.innerHTML = "";
+
+  data.group.forEach(g => {
+    const w = g["work-summary"][0];
+    const title = w.title?.title?.value || "Untitled";
+    const year = w["publication-date"]?.year?.value || "";
+    const doi = w["external-ids"]?.["external-id"]
+      ?.find(id => id["external-id-type"] === "doi");
+
+    const link = doi ? `https://doi.org/${doi["external-id-value"]}` : null;
+
+    container.innerHTML += `
+      <div>
+        <strong>${year}</strong> —
+        ${link ? `<a href="${link}" target="_blank">${title}</a>` : title}
+      </div>`;
+  });
+}
+</script>
+
+</body>
+</html>
