@@ -13,49 +13,70 @@
     },
     {
       "name": {
-        "pt": "Aluno de Pós 2",
-        "en": "Graduate Student 2"
+        "pt": "Leonardo Braga Carvalho",
+        "en": "Leonardo Braga Carvalho"
       },
       "photo": "images/anonymous_icon.png",
       "description": {
-        "pt": "Texto genérico de aproximadamente 700 caracteres descrevendo formação, linha de pesquisa, interesses científicos, métodos utilizados e inserção do aluno no contexto do laboratório.",
-        "en": "Generic text of approximately 700 characters describing academic background, research line, scientific interests, methods used, and the student's role within the laboratory."
+        "pt": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec.",
+        "en": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec."
       }
     }
+	{
+      "name": {
+        "pt": "Sandy Aparecida Mendes de Aguiar",
+        "en": "Sandy Aparecida Mendes de Aguiar"
+      },
+      "photo": "images/anonymous_icon.png",
+      "description": {
+        "pt": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec.",
+        "en": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec."
+      }
+    }
+	{
+      "name": {
+        "pt": "Jeniffer Martins Silva",
+        "en": "Jeniffer Martins Silva"
+      },
+      "photo": "images/anonymous_icon.png",
+      "description": {
+        "pt": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec.",
+        "en": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec."
+      }
   ],
 
   "undergrad": [
     {
       "name": {
-        "pt": "Aluno de Graduação 1",
-        "en": "Undergraduate Student 1"
+        "pt": "Clara Bahia Gouvêa",
+        "en": "Clara Bahia Gouvêa"
       },
-      "photo": "images/anonymous_icon.png",
+      "photo": "images/clara.jpg",
       "description": {
-        "pt": "Texto genérico curto (~300 caracteres) descrevendo tema de IC e principais interesses.",
-        "en": "Short generic text (~300 characters) describing undergraduate research topic and main interests."
+        "pt": "Clara Bahia é estudante de graduação em Ciências Biológicas (bacharelado) pela Unesp de Bauru. Ela desenvolve Iniciação Científica (IC) no LB2M. Possui interesse nas áreas de bioinformática, biotecnologia e microbiologia. Sua pesquisa atual tem ênfase em bioinformática e envolve o design de primers táxon-específicos para procariontes ambientais.",
+        "en": "Clara Bahia is an undergraduate student in Biological Sciences (B.Sc.) at Unesp, Bauru campus. She conducts undergraduate research (Scientific Initiation) at LB2M. Her interests include bioinformatics, biotechnology, and microbiology. Her current research focuses on bioinformatics and involves the design of taxon-specific primers for environmental prokaryotes."
       }
     },
     {
       "name": {
-        "pt": "Aluno de Graduação 2",
-        "en": "Undergraduate Student 2"
+        "pt": "Gabriel Rodrigues da Silva",
+        "en": "Gabriel Rodrigues da Silva"
       },
       "photo": "images/anonymous_icon.png",
       "description": {
-        "pt": "Texto genérico curto (~300 caracteres) descrevendo tema de IC e principais interesses.",
-        "en": "Short generic text (~300 characters) describing undergraduate research topic and main interests."
+        "pt": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+        "en": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."
       }
     },
     {
       "name": {
-        "pt": "Aluno de Graduação 3",
-        "en": "Undergraduate Student 3"
+        "pt": "Julia Ferraz Borges da Silva",
+        "en": "Julia Ferraz Borges da Silva"
       },
       "photo": "images/anonymous_icon.png",
       "description": {
-        "pt": "Texto genérico curto (~300 caracteres) descrevendo tema de IC e principais interesses.",
-        "en": "Short generic text (~300 characters) describing undergraduate research topic and main interests."
+        "pt": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+        "en": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."
       }
     }
   ],
