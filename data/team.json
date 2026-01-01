@@ -27,10 +27,10 @@
         "pt": "Sandy Aparecida Mendes de Aguiar",
         "en": "Sandy Aparecida Mendes de Aguiar"
       },
-      "photo": "images/anonymous_icon.png",
+      "photo": "images/sandy.jpg",
       "description": {
-        "pt": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec.",
-        "en": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec."
+        "pt": "Sandy Aparecida Mendes de Aguiar é bióloga, formada em Ciências Biológicas (Bacharelado) pela Universidade do Sagrado Coração e Licenciada pela UNIFAVENI. Durante a graduação, realizou iniciação científica, o que contribuiu para a consolidação de sua formação acadêmica e interesse pela pesquisa científica. Atualmente, é aluna de mestrado no Programa de Pós-Graduação em Biociências Interunidades da UNESP, desenvolvendo pesquisas em microbiologia do solo, com ênfase no isolamento e identificação de Acidobactérias e Actinomicetos de solos de unidades de conservação do Cerrado brasileiro. É apaixonada pela natureza e seus interesses incluem preservação ambiental, microbiologia e práticas sustentáveis no agronegócio.",
+        "en": "Sandy Aparecida Mendes de Aguiar is a biologist with a Bachelor’s degree in Biological Sciences from the University of the Sacred Heart and a Licentiate degree from UNIFAVENI. During her undergraduate studies, she carried out scientific initiation research, which contributed to the consolidation of her academic background and her interest in scientific research. She is currently a Master’s student in the Interunits Graduate Program in Biosciences at São Paulo State University (UNESP), developing research in soil microbiology, with emphasis on the isolation and identification of Acidobacteria and Actinomycetes from soils of protected areas within the Brazilian Cerrado. She is passionate about nature, and her scientific interests include environmental conservation, microbiology, and sustainable practices in agribusiness."
       }
     },
     {
@@ -84,6 +84,7 @@
 
   "alumni": [
     "Anna Julia Chen, Graduação",
+    "Letícia Anacleto do Nascimento, Graduação"
     "Beatriz Augusto Domingos, Graduação"
   ]
 }
